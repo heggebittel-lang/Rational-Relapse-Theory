@@ -1,6 +1,6 @@
 # A Structural Model of Rational Addiction
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20086392-blue)](https://doi.org/10.5281/zenodo.20086392)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20632874-blue)](https://doi.org/10.5281/zenodo.20632874)
 **Author:** Yushang Cheng
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--3218--6423-green)](https://orcid.org/0009-0001-3218-6423)
 **Status:** Working Paper / Complete Manuscript
@@ -30,7 +30,7 @@ This project has evolved through multiple versions:
 
 ### Latest: [v3.0](./v3.0/)
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20086392-blue)](https://doi.org/10.5281/zenodo.20086392)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20632874-blue)](https://doi.org/10.5281/zenodo.20632874)
 
 This is the **current version**. The manuscript has been fully translated from Chinese to English. Major theoretical expansions include the axiomatic derivation of the integral-form function family, analytical solutions for spiral trajectories, and a complete welfare analysis. See [v3.0/README.md](./v3.0/README.md) for details.
 
@@ -74,7 +74,7 @@ Initial conceptual framework and preliminary mathematical derivation.
 
 If you use this work, please cite as:
 
-> Cheng, Y. (2026). *A Structural Model of Rational Addiction* (v3.0). Zenodo. <https://doi.org/10.5281/zenodo.20086392>
+> Cheng, Y. (2026). *A Structural Model of Rational Addiction* (v3.0). Zenodo. <https://doi.org/10.5281/zenodo.20632874>
 
 For earlier versions:
 
