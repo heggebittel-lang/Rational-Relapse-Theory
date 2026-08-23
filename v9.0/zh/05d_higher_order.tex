@@ -1,0 +1,130 @@
+\subsection{高阶局部信息}
+\label{sec:higher-order}
+
+上述论证并不限于二阶 jet。令 $m\ge1$ 且
+\[
+\alpha=(\alpha_1,\alpha_2)\in\mathbb N_0^2,
+\qquad
+|\alpha|=\alpha_1+\alpha_2,
+\qquad
+\alpha!=\alpha_1!\alpha_2!.
+\]
+对
+\[
+\delta z_{in}
+=
+(\delta x_{in},\delta a_{in})
+=
+z_{in}-z_0,
+\]
+写
+\[
+(\delta z_{in})^\alpha
+=
+\delta x_{in}^{\alpha_1}
+\delta a_{in}^{\alpha_2}.
+\]
+令 $t=(t_\alpha)_{|\alpha|\le m}$，并定义
+\begin{equation}
+\mathcal L_t^{(m)}f(z_0)
+:=
+\sum_{|\alpha|\le m}
+t_\alpha\,\partial^\alpha f(z_0).
+\label{eq:higher-order-functional}
+\end{equation}
+
+\begin{theorem}[高阶有限差分]
+\label{thm:higher-order-differences}
+假设局部设计的支持半径趋于零。令 $\lambda_n\in\Lambda_n$ 且 $s_n\ne0$，并对每个多重指标 $|\alpha|\le m$ 满足
+\begin{equation}
+\frac1{s_n}
+\sum_i
+\lambda_{in}
+\frac{(\delta z_{in})^\alpha}{\alpha!}
+\longrightarrow
+t_\alpha,
+\label{eq:higher-order-moments}
+\end{equation}
+以及
+\begin{equation}
+\frac1{|s_n|}
+\sum_i
+|\lambda_{in}|
+\|\delta z_{in}\|^m
+=
+O(1).
+\label{eq:higher-order-variation}
+\end{equation}
+则对 $z_0$ 附近任意 $f\in C^m$，
+\begin{equation}
+\boxed{
+\frac1{s_n}\sum_i\lambda_{in}f(z_{in})
+\longrightarrow
+\mathcal L_t^{(m)}f(z_0).}
+\label{eq:higher-order-limit}
+\end{equation}
+在消去条件下，同一极限可由相应的标准化循环和识别。
+\end{theorem}
+
+\begin{proof}
+在 $z_0$ 处使用 Taylor 公式，并且在收缩支持上一致地有
+\[
+f(z_{in})
+=
+\sum_{|\alpha|\le m}
+\frac{\partial^\alpha f(z_0)}{\alpha!}
+(\delta z_{in})^\alpha
++
+R_{in},
+\qquad
+R_{in}=o(\|\delta z_{in}\|^m).
+\]
+乘以 $\lambda_{in}/s_n$ 并求和后，多项式部分由式~\eqref{eq:higher-order-moments} 收敛；余项由式~\eqref{eq:higher-order-variation} 趋于零。当 $f=H$ 时，左端由式~\eqref{eq:gap-cycle-price} 等于标准化的观测循环转移。
+\end{proof}
+
+令 $\Pi_{m-1}$ 表示 $(x,a)$ 中总次数不超过 $m-1$ 的多项式集合。
+
+\begin{theorem}[不恢复低阶信息的高阶识别]
+\label{thm:order-separation}
+假设每一个观测 $A$--$B$ 循环对比都会消去低阶多项式：
+\begin{equation}
+\sum_i\lambda_i p(z_{in})=0
+\qquad
+\text{对每个 }n,\ \lambda\in\Lambda_n,\ p\in\Pi_{m-1}.
+\label{eq:lower-order-annihilation}
+\end{equation}
+再假设定理~\ref{thm:higher-order-differences} 对某个系数向量 $t$ 成立，并且
+\[
+t_\alpha=0
+\qquad\text{只要 }|\alpha|<m.
+\]
+那么齐次 $m$ 阶泛函
+\begin{equation}
+\boxed{
+\sum_{|\alpha|=m}
+t_\alpha\,\partial^\alpha H(z_0)}
+\label{eq:mth-order-identified}
+\end{equation}
+得到点识别；但在约化式 $C^m$ 函数类上，任何只涉及严格低于 $m$ 阶导数的非零局部泛函都未被点识别。
+
+更一般地，若这类有限差分权重序列张成齐次 $m$ 阶导数空间中的一个子空间 $\mathcal S_m$，则 $\mathcal S_m$ 中的每一个元素都得到识别，即使完整的 $(m-1)$ 阶 jet 仍未识别。
+\end{theorem}
+
+\begin{proof}
+式~\eqref{eq:mth-order-identified} 的识别来自定理~\ref{thm:higher-order-differences}。由式~\eqref{eq:lower-order-annihilation}，每个 $p\in\Pi_{m-1}$ 都在观测上为零。对 $(m-1)$ 阶 jet 的任意非零线性泛函，可取其 Taylor 多项式 $p\in\Pi_{m-1}$，使该泛函在 $z_0$ 处非零。加入任意倍数的 $p$ 都不会改变任何循环方程，却能让目标值遍历整个实数轴。因此，不存在被点识别的非零低阶 jet 泛函。同一论证可同时应用于所有张成 $\mathcal S_m$ 的权重序列。
+\end{proof}
+
+定理~\ref{thm:derivatives-without-levels} 中的二阶设计就是 $m=2$ 的情形。其循环权重消去仿射函数，而其二阶矩张成
+\[
+\operatorname{span}\{\partial_{xx},\partial_{xa}\}.
+\]
+额外的零方向 $\partial_{aa}$ 由该特定设计的支持几何所决定。
+
+\begin{corollary}[不恢复水平值的反事实比较静态]
+\label{cor:response-without-levels}
+在定理~\ref{thm:derivatives-without-levels} 的条件下，假设环境 $A$ 中的补偿观测识别 $W_{A,xa}$ 与 $W_{A,xx}$，已知当前侧导数 $d_{xa}$ 与 $d_{xx}$，并且目标基准是一个内部严格局部最优点。则 $D_ag_B(a_0)$ 得到点识别，即使任何邻近设计点上的 $H(z)$ 都未得到点识别。
+\end{corollary}
+
+\begin{proof}
+该定理识别 $\eta_{xa}=H_{xa}(z_0)$ 与 $\eta_{xx}=H_{xx}(z_0)$。把它们代入传递恒等式与目标一阶条件，即得式~\eqref{eq:main-response-v19}。
+\end{proof}
