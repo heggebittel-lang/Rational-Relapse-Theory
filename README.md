@@ -23,7 +23,7 @@ This archive is intentionally versioned rather than rewritten retroactively. A r
 | [v2.0](./v2.0/) | First complete structural model | v2.x | Chinese | [10.5281/zenodo.20086392](https://doi.org/10.5281/zenodo.20086392) |
 | [v3.0](./v3.0/) | Function-family / adjustment-friction formulation | v3.0 | English + Chinese | [10.5281/zenodo.20632874](https://doi.org/10.5281/zenodo.20632874) |
 | [v4.0](./v4.0/) | Axiomatic endogenous-recovery structural model | v6.2 | Chinese + English reader | DOI pending release |
-| [v5.0](./v5.0/) | _Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction_ | JME-S-26-00480 | English | DOI pending release |
+| [v5.0](./v5.0/) | _Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction_ | JME-S-26-00480 | English + Chinese | DOI pending release |
 | [v6.0](./v6.0/) | _Recovery Histories: Exact Passage Compression and Additive Choice_ | JET_Recovery_Histories_v25 | English + Chinese | DOI pending release |
 | [v7.0](./v7.0/) | _Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation_ | JME-D-26-00519 | English + Chinese | DOI pending release |
 | [v8.0](./v8.0/) | _Compensated Choice and Recursive Counterfactual Identification_ | recursive_monetary_comparison_core_theory_v9_1 | English | DOI pending release |
