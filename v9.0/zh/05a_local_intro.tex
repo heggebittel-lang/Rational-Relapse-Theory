@@ -1,0 +1,93 @@
+\section{由收缩循环得到的局部识别}
+\label{sec:shrinking}
+
+令 $z=(x,a)$，并固定 $z_0=(x_0,a_0)$。在局部设计 $n$ 中，令
+\[
+z_{1n},\ldots,z_{M_n n}
+\]
+为抽样设计点，并写
+\[
+A(z):=(V\circ\Gamma_A)(z),
+\qquad
+B(z):=(V\circ\Gamma_B)(z),
+\qquad
+H(z):=A(z)-B(z).
+\]
+把 $Q_n$ 中的延续标签按如下次序排列：
+\[
+A(z_{1n}),\ldots,A(z_{M_n n}),
+B(z_{1n}),\ldots,B(z_{M_n n}).
+\]
+当有限表示通过结构模型解释时，延续势 $v$（在共同归一化下）把这些标签分别赋值为 $A(z_{in})$ 与 $B(z_{in})$。为了给出锐利的局部结论，我们直接使用满足观测循环方程的约化式函数 $A$ 与 $B$。设计 $n$ 中的原始补偿比较具有观测当前关联 $D_n$、延续对比 $Q_n$ 与精确转移 $\tau_n$。
+
+\subsection{目标环境与观测比较}
+\label{sec:environment-support}
+
+目标环境在 $z_0$ 的一个邻域上定义为
+\[
+W_B(x,a)=u_B(x,a)+V(\Gamma_B(x,a)).
+\]
+令 $\mathcal E_n$ 表示局部设计 $n$ 中观测到的补偿比较。族 $\{\mathcal E_n\}$ 不必包含由环境 $B$ 中所有邻近方案所组成的比较。它还可以包含这样的诱导菜单：把一个当前后果 $\xi$ 与某个延续合同 $\Gamma_J(z)$ 配对，即使该复合方案并不属于目标选择集。在保险例子中，这类合同变体保持当前保障不变，却替换成不同的状态依赖续保条款。下文的识别均相对于 $\{\mathcal E_n\}$ 而言；$\Gamma_B$ 仍在完整的局部选择集上有定义。
+
+\subsection{来自循环空间的延续对比}
+
+令
+\[
+S_n:=(I_{M_n}\ I_{M_n}),
+\qquad
+T_n:=(I_{M_n}\ 0).
+\]
+与 $A$--$B$ 对比相关的整数循环格为
+\begin{equation}
+\mathcal C_n^{\mathbb Z}
+:=
+\left\{
+r\in\mathbb Z^{E_n}:
+D_nr=0,\ S_nQ_nr=0
+\right\}.
+\label{eq:integer-local-cycles}
+\end{equation}
+它们刻画观测比较之间的有限复制与消去关系。
+
+这些观测方程可以线性组合。定义实循环空间
+\begin{equation}
+\mathcal C_n
+:=
+\operatorname{span}_{\mathbb R}\mathcal C_n^{\mathbb Z}
+=
+\left\{
+r\in\mathbb R^{E_n}:
+D_nr=0,\ S_nQ_nr=0
+\right\}.
+\label{eq:real-local-cycles}
+\end{equation}
+之所以有上述等式，是因为 $D_n$ 与 $Q_n$ 的系数都是整数：有理零空间向量张成实零空间，而通过清除分母可把它们转化为整数循环。
+
+对 $r\in\mathcal C_n$，总延续对比具有形式
+\[
+Q_nr=(\lambda,-\lambda),
+\qquad
+\lambda=T_nQ_nr.
+\]
+由此得到的对比空间为
+\begin{equation}
+\boxed{
+\Lambda_n:=T_nQ_n\mathcal C_n
+\subseteq\mathbb R^{M_n}.}
+\label{eq:gap-weight-space}
+\end{equation}
+在消去条件下，每个 $r\in\mathcal C_n^{\mathbb Z}$ 都满足
+\[
+r^{\mathsf T}\tau_n
+=
+\sum_i\lambda_iH(z_{in}).
+\]
+由线性性，同一恒等式对任意 $r\in\mathcal C_n$ 也成立：
+\begin{equation}
+r^{\mathsf T}\tau_n
+=
+\sum_i\lambda_iH(z_{in}),
+\qquad
+Q_nr=(\lambda,-\lambda).
+\label{eq:gap-cycle-price}
+\end{equation}
