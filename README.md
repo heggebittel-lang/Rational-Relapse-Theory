@@ -15,6 +15,8 @@ The current endpoint of the project is **v9.0 — _Compensated Current Choice an
 
 This archive is intentionally versioned rather than rewritten retroactively. A reader can therefore follow how the project moved from an addiction-specific conjecture to a general identification problem.
 
+For a compact bilingual navigation table, see **[ARCHIVE_INDEX.md](./ARCHIVE_INDEX.md)**.
+
 ## Version map
 
 | Archive version | Manuscript / stage | Original internal label | Language | Release / DOI |
@@ -35,6 +37,8 @@ The archive version numbers **v4.0–v9.0 are chronological repository labels**.
 
 Please cite the **specific released version** you use rather than this repository generically. Versions v1.0–v3.0 already have Zenodo DOIs. For v4.0–v9.0, a DOI will be added after the corresponding GitHub Release is created and synchronized to Zenodo.
 
+GitHub citation metadata is provided in [`CITATION.cff`](./CITATION.cff). It points to the current endpoint for repository-level citation, but the version-specific Zenodo DOI remains the preferred citation for a particular manuscript stage.
+
 The historical folder name or internal manuscript number is not intended to replace a release citation.
 
 ## What changed intellectually?
@@ -43,7 +47,7 @@ The project began from a simple question: can a rational-addiction model contain
 
 Successive versions then asked increasingly demanding questions about functional form, additive representation, double counting, path/history compression, compensated measurement, and identification. Literature auditing eventually showed that much of the mathematical machinery belongs to established revealed-preference, additive-measurement, graph, finite-difference, and dynamic-systems theory. The final stage therefore narrows the claim: the potentially substantive object is the **information structure and comparison support** required for counterfactual identification, not the standard tools used to analyze it.
 
-See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history and [RELEASE_GUIDE.md](./RELEASE_GUIDE.md) for the intended GitHub Release → Zenodo workflow.
+See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [RELEASE_GUIDE.md](./RELEASE_GUIDE.md) for the GitHub Release → Zenodo workflow, and [ZENODO_RELEASE_METADATA.md](./ZENODO_RELEASE_METADATA.md) for the v4.0–v9.0 metadata sequence.
 
 ## Preservation policy
 
