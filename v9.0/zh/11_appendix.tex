@@ -1,0 +1,64 @@
+\appendix
+
+\section{有限图定理的证明}
+\label{app:finite-proof}
+
+\begin{lemma}[有理零空间基]
+\label{lem:rational-v19}
+若一个矩阵的元素都是有理数，则它的零空间存在一组坐标为有理数的基。
+\end{lemma}
+
+\begin{proof}
+在 $\mathbb Q$ 上做行消元，可把主元变量表示为自由变量的有理线性组合。依次把自由变量设为标准基向量，即得到有理基。
+\end{proof}
+
+\begin{lemma}[清除分母]
+\label{lem:clearing-v19}
+令 $M$ 为整数矩阵，$\ell$ 为整数向量。若 $\ell$ 属于 $M$ 的实列空间，则存在 $k\in\N_+$ 与 $z\in\Z^{\dim(\text{domain }M)}$，使得
+\[
+k\ell=Mz.
+\]
+\end{lemma}
+
+\begin{proof}
+方程 $Mz=\ell$ 存在实数解。在 $\mathbb Q$ 上做 Gaussian 消元可得到有理解；再乘以共同分母即可。
+\end{proof}
+
+\begin{proof}[定理~\ref{thm:additive-graph} 的证明]
+令
+\[
+M=
+\begin{pmatrix}
+D\\Q
+\end{pmatrix}.
+\]
+若式~\eqref{eq:graph-representation} 成立且 $Mz=0$，则 $z^{\mathsf T}\tau=0$，故消去条件是必要的。
+
+反过来，$M$ 的元素均为整数。由引理~\ref{lem:rational-v19}，$\ker M$ 中的每个实向量都是有理零空间向量的实线性组合；清除分母后，这些向量都可以化为整数零向量。因此消去条件意味着
+\[
+Mz=0\Longrightarrow z^{\mathsf T}\tau=0
+\qquad(z\in\R^E).
+\]
+于是 $\tau\perp\ker M$，所以 $\tau$ 属于 $M$ 的行空间，等价地属于 $M^{\mathsf T}$ 的列空间。因此存在 $u$ 与 $v$，使
+\[
+\tau=M^{\mathsf T}(u,v)=D^{\mathsf T}u+Q^{\mathsf T}v.
+\]
+\end{proof}
+
+\begin{proof}[定理~\ref{thm:feasible-finite} 的证明]
+令 $w=(u,v)$，并令 $M=(D^{\mathsf T},Q^{\mathsf T})$，于是观测方程为 $Mw=\tau$。目标泛函为
+\[
+\ell^{\mathsf T}w,
+\qquad
+\ell=(0,c).
+\]
+该泛函在所有 $Mw=\tau$ 的解上保持常数，当且仅当 $\ell$ 与 $\ker M$ 正交，等价地，当且仅当 $\ell$ 属于 $M$ 的行空间。因此存在实边向量 $z$，使
+\[
+Dz=0,
+\qquad
+Qz=c.
+\]
+由于 $D,Q,c$ 均为整数，引理~\ref{lem:clearing-v19} 给出有限复制形式~\eqref{eq:feasible-cycle}。用 $z^{\mathsf T}$ 左乘式~\eqref{eq:graph-representation} 即得式~\eqref{eq:feasible-price}。
+
+若 $\ell$ 不属于 $M$ 的行空间，则存在扰动 $h\in\ker M$ 使 $\ell^{\mathsf T}h\ne0$。从任意一个解出发，$w+th$ 对所有 $t\in\R$ 都保持观测等价，而目标泛函则遍历整个 $\R$。
+\end{proof}
