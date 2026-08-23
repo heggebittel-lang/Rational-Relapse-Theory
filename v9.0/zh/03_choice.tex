@@ -1,0 +1,64 @@
+\section{局部选择函数}
+\label{sec:locus}
+
+令当前选择问题的净货币价值为 $W(x,a)-C(x,a)$，其中 $C(x,a)$ 是继承状态 $a$ 下行动 $x$ 的资源成本。内部最优解满足
+\begin{equation}
+W_x(x,a)=C_x(x,a).
+\label{eq:FOC-WC}
+\end{equation}
+由式~\eqref{eq:Wx-pi}，在能够进行补偿实验的地方，这个条件是可观察的：
+\begin{equation}
+\boxed{
+\pi(x,a)=C_x(x,a).}
+\label{eq:FOC-pi}
+\end{equation}
+定义
+\begin{equation}
+F(x,a):=\pi(x,a)-C_x(x,a).
+\label{eq:F-def}
+\end{equation}
+$F$ 的正则零水平集定义局部选择函数。
+
+\begin{figure}[H]
+\centering
+\refstepcounter{figure}\label{fig:locus}
+\includegraphics[width=\textwidth]{fig2_locus.jpg}
+\par\smallskip\small\textit{图示说明：在每个继承状态 $a$ 下重复图~\ref{fig:primitive} 的补偿二元实验，满足 $\pi(x,a)=C_x(x,a)$ 的点构成最优当前选择轨迹 $x=g(a)$；其局部斜率 $g'(a_0)$ 即直接比较静态。}
+\end{figure}
+
+假设 $F$ 在 $(x_0,a_0)$ 附近连续可微，$F(x_0,a_0)=0$，并且
+\begin{equation}
+C_{xx}(x_0,a_0)-\pi_x(x_0,a_0)>0.
+\label{eq:regularity-F}
+\end{equation}
+隐函数定理给出唯一的可微局部选择分支 $x=g(a)$，满足
+\begin{equation}
+\boxed{F(g(a),a)=0}
+\label{eq:g-locus}
+\end{equation}
+以及
+\begin{equation}
+\boxed{
+ g'(a)
+ =
+ \frac{\pi_a(g(a),a)-C_{xa}(g(a),a)}
+ {C_{xx}(g(a),a)-\pi_x(g(a),a)}.}
+\label{eq:direct-gprime}
+\end{equation}
+当邻近补偿比较可观察时，式~\eqref{eq:direct-gprime} 就是直接比较静态。
+
+\subsection{反事实问题}
+
+设环境 $A$ 中可以观察邻近补偿比较；在环境 $B$ 中，只观察到基准当前选择 $g_B(a_0)$，但观察不到邻近补偿比较。写为
+\[
+W_A=u_A+V\circ\Gamma_A,
+\qquad
+W_B=u_B+V\circ\Gamma_B.
+\]
+这一记号定义了本文关心的结构性反事实对象。这里并不使用 $V$ 的任何数值来理性化有限比较数据。相反，第~\ref{sec:cancellation} 节刻画观测到的补偿转移何时自身具有当前--延续加法表示。当结构模型被维持时，其延续价值在观测标签上给出这种表示的一个实例。
+
+环境 $A$ 中的补偿观测识别 $W_A$ 的局部导数。目标响应还取决于
+\[
+H(x,a):=(V\circ\Gamma_A)(x,a)-(V\circ\Gamma_B)(x,a)
+\]
+的导数。问题是：如何从已观测的补偿比较中识别 $H$ 的有限与局部泛函。
