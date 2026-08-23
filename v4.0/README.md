@@ -3,7 +3,7 @@
 **Original internal label:** v6.2  
 **Original manuscript date:** 26 June 2026  
 **Original manuscript language:** Chinese  
-**Archive status:** English reader available; exact file checksums recorded; release/DOI pending  
+**Archive status:** English companion PDF uploaded; original Chinese PDF still to be added before release  
 **Planned release tag:** `v4.0`  
 **Zenodo DOI:** pending release
 
@@ -17,22 +17,29 @@ This is the point at which the project moved beyond the earlier adjustment-frict
 
 ## English access
 
-- [`ENGLISH_READER.md`](./ENGLISH_READER.md) gives an English reader's translation of the main structure, equations, propositions, numerical examples, and limitations of the historical manuscript.
-- The English reader deliberately preserves the June 2026 framing. It does not retrofit later novelty audits or later terminology into this version.
-- The original Chinese manuscript remains the authoritative historical text.
+- [`v4.0_en.pdf`](./v4.0_en.pdf) is the uploaded English archival companion.
+- [`ENGLISH_READER.md`](./ENGLISH_READER.md) gives a compact English reader's translation of the main structure, equations, propositions, numerical examples, and limitations of the historical manuscript.
+- The English materials deliberately preserve the June 2026 framing. They do not retrofit later novelty audits or later terminology into this version.
+- The original Chinese manuscript remains the authoritative historical text for this stage.
 
-## Archival files prepared for the release
+## Remaining release file
 
-The following exact files have been prepared for the v4.0 release package:
+Before creating the `v4.0` GitHub Release, add the original Chinese PDF as:
 
 - `v4.0.pdf` — original Chinese manuscript
+
+Its prepared SHA-256 is already recorded in [`SHA256SUMS.txt`](./SHA256SUMS.txt).
+
+## Optional preservation assets
+
+The following files have also been prepared and may be committed or attached to the release for reproducibility:
+
 - `v4.0.tex` — original Chinese LaTeX source
-- `v4.0_en.pdf` — abridged English archival companion
 - `v4.0_en.tex` — English companion LaTeX source
 - `fold_illustration.png` — historical fold illustration
-- `ns_illustration.png` — historical Neimark-Sacker illustration
+- `ns_illustration.png` — historical Neimark–Sacker illustration
 
-[`SHA256SUMS.txt`](./SHA256SUMS.txt) records cryptographic hashes for the two PDFs and two TeX sources so that the exact prepared files can be verified when attached to the GitHub Release / Zenodo record.
+These source and figure files are useful archival assets but are not a reason to reopen or revise the historical theory.
 
 ## Release and citation policy
 
