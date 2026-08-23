@@ -4,8 +4,8 @@
 **Chinese title:** 《路径生成域上的可加测量：理性成瘾中的定向恢复》  
 **Original submission label:** JME-S-26-00480  
 **Language:** English + Chinese archival translation  
-**Planned release tag:** `v5.0`  
-**Zenodo DOI:** pending release
+**Release tag:** `v5.0`  
+**Zenodo DOI:** [10.5281/zenodo.22067231](https://doi.org/10.5281/zenodo.22067231)
 
 ## Manuscript identity
 
@@ -29,6 +29,10 @@ The central boundary result is that location-free common-increment cancellation 
 
 ## Translation note
 
-The Chinese file is an archival translation of the same historical manuscript, not a new theoretical version. The main text preserves the definitions, assumptions, propositions, equations, and economic interpretation. For readability, some repetitive prose in the proof appendices is compressed while the core constructions and derivation chains are retained. When citing the work, cite the `v5.0` release / Zenodo DOI rather than treating the Chinese translation as a separate paper.
+The Chinese file is an archival translation of the same historical manuscript, not a new theoretical version. The main text preserves the definitions, assumptions, propositions, equations, and economic interpretation. For readability, some repetitive prose in the proof appendices is compressed while the core constructions and derivation chains are retained. When citing the work, cite the `v5.0` Zenodo DOI rather than treating the Chinese translation as a separate paper.
 
 The original JME submission number is retained only for provenance and correspondence matching.
+
+## Citation
+
+Please cite this historical version using DOI **10.5281/zenodo.22067231**. Later archive versions should be cited separately using their own version-specific records.
