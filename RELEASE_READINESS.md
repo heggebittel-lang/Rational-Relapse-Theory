@@ -19,22 +19,24 @@ LaTeX sources and figure files are recommended preservation assets, but they are
 
 | Version | Authoritative PDF | Companion PDF | Provenance | Checksums | Status |
 |---|---:|---:|---:|---:|---|
-| v4.0 | Chinese PDF present and verified | English PDF present and verified | yes | matches uploaded PDFs | **ready for release** |
-| v5.0 | English PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | ready for final review |
+| v4.0 | Chinese PDF present and verified | English PDF present and verified | yes | matches uploaded PDFs | **released — DOI 10.5281/zenodo.22067123** |
+| v5.0 | English PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | **next release** |
 | v6.0 | English PDF present | Chinese PDF present | yes | matches uploaded PDFs | ready for final review |
 | v7.0 | English PDF present | Chinese PDF present | yes | matches uploaded PDFs | ready for final review |
 | v8.0 | surviving English PDF present | Chinese PDF present | yes; source-loss note explicit | standardized | ready for final review |
 | v9.0 | English endpoint PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | ready for final review |
 
-## v4.0 verification
+## v4.0 outcome
 
-The authoritative Chinese PDF and English archival companion are both present in `v4.0/`. Their Git blob identities match the prepared archival copies, and their SHA-256 values are recorded in `v4.0/SHA256SUMS.txt`.
+The first GitHub-triggered Zenodo deposit initially archived the entire repository snapshot. The Zenodo record was corrected after publication by replacing that whole-repository archive with an archive containing the **v4.0 folder only**. The resulting version DOI is:
 
-The root `.zenodo.json` is currently set to v4.0 metadata. The next action is therefore to create the `v4.0` GitHub Release and allow the connected Zenodo integration to archive it.
+`10.5281/zenodo.22067123`
+
+This establishes the rule for the remaining sequence: the Zenodo citation object for each stage must contain only that stage's archive, even though GitHub continues to preserve the complete v1.0–v9.0 research history.
 
 ## Recommended, non-blocking source preservation
 
-When convenient, the following source files can also be committed or attached to the corresponding release:
+When convenient, the following source files can also be committed or included in the corresponding version archive:
 
 - v4.0: original Chinese TeX, English companion TeX, fold and Neimark–Sacker illustrations;
 - v5.0: English and Chinese TeX plus the three historical figures and graphical abstract;
@@ -47,8 +49,8 @@ These additions improve reproducibility but should not reopen the theoretical co
 
 ## Release sequence
 
-Proceed sequentially:
+Continue sequentially:
 
-`v4.0 → Zenodo DOI → update metadata → v5.0 → ... → v9.0`
+`v5.0 → Zenodo DOI → update metadata → v6.0 → ... → v9.0`
 
-Before each release, advance the root `.zenodo.json` using [`ZENODO_RELEASE_METADATA.md`](./ZENODO_RELEASE_METADATA.md). After Zenodo assigns a DOI, update the version README, root README, and [`ARCHIVE_INDEX.md`](./ARCHIVE_INDEX.md) before moving to the next version.
+Before each GitHub release, the root `.zenodo.json` should be advanced to the next version's metadata. If the GitHub–Zenodo integration is left enabled, verify the resulting Zenodo file set and replace any whole-repository source archive with a version-only archive before treating the DOI record as final.
