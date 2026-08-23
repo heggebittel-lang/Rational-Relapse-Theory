@@ -1,0 +1,72 @@
+\subsection{收缩循环与有限差分}
+\label{sec:finite-differences}
+
+固定包含局部设计点的 $z_0$ 开邻域 $U$。若一个光滑扰动 $q$ 满足
+\begin{equation}
+\sum_i\lambda_iq(z_{in})=0
+\qquad
+\text{对所有 }n\text{ 以及所有 }\lambda\in\Lambda_n,
+\label{eq:null-perturbation}
+\end{equation}
+则称其在观测上为零。约化式光滑函数类上的识别具有通常的零空间形式：一个局部线性泛函得到点识别，当且仅当它在所有观测为零的扰动上都为零。下文只用这一事实来说明锐利性；具体识别公式则直接来自有限差分。
+
+对 $t=(t_0,t_x,t_a,t_{xx},t_{xa},t_{aa})\in\R^6$，定义
+\begin{equation}
+\mathcal L_t f
+:=
+t_0f+t_xf_x+t_af_a+t_{xx}f_{xx}+t_{xa}f_{xa}+t_{aa}f_{aa}
+\quad\text{在 }z_0\text{ 处}.
+\label{eq:Lt-definition}
+\end{equation}
+令 $P_n$ 的第 $i$ 行为
+\[
+\left(
+1,\delta x_{in},\delta a_{in},
+\frac12\delta x_{in}^2,
+\delta x_{in}\delta a_{in},
+\frac12\delta a_{in}^2
+\right),
+\]
+其中 $(\delta x_{in},\delta a_{in})=z_{in}-z_0$。
+
+\begin{theorem}[收缩有限差分]
+\label{thm:primitive-local}
+假设支持半径趋于零。令 $\lambda_n\in\Lambda_n$ 与 $\alpha_n\ne0$ 满足
+\begin{equation}
+\frac{P_n^{\mathsf T}\lambda_n}{\alpha_n}\longrightarrow t
+\label{eq:moment-limit}
+\end{equation}
+以及
+\begin{equation}
+\frac1{|\alpha_n|}\sum_i|\lambda_{in}|
+(\delta x_{in}^2+\delta a_{in}^2)=O(1).
+\label{eq:moment-variation}
+\end{equation}
+那么，对 $z_0$ 邻域中的任意 $C^2$ 函数 $f$，
+\begin{equation}
+\boxed{
+\frac1{\alpha_n}\sum_i\lambda_{in}f(z_{in})
+\longrightarrow \mathcal L_tf(z_0).}
+\label{eq:cycle-moment-limit}
+\end{equation}
+在消去条件下，当 $f=H$ 时，左端可由补偿转移的标准化循环和直接观察。因此 $\mathcal L_tH(z_0)$ 得到点识别。
+\end{theorem}
+
+\begin{proof}
+Taylor 展开给出
+\[
+f(z_{in})
+=P_{n,i\cdot}\,j^2_{z_0}f+R_{in},
+\qquad
+R_{in}=o(\delta x_{in}^2+\delta a_{in}^2),
+\]
+并且该余项在收缩支持上一致成立。式~\eqref{eq:moment-limit}--\eqref{eq:moment-variation} 给出极限；式~\eqref{eq:gap-cycle-price} 则使其在 $H$ 上可观察。
+\end{proof}
+
+熟悉的中心二阶差分与混合矩形差分分别对应
+\[
+(1,-2,1)/h^2
+\quad\text{和}\quad
+(1,-1,-1,1)/(hk),
+\]
+前提是相应权重属于 $\Lambda_n$。
