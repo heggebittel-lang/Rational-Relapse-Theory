@@ -1,0 +1,177 @@
+\section{端点进展、总通行调整与目标达成}\label{sec:pha}
+
+本节逐个解释每个正则支撑赋值，把由有序端点固定的部分，与附着于总遍历、对反向具有偶对称性的调整，以及目标达成产生的边界贡献分离开来。在定理~\ref{thm:B} 下，固定 $\Lambda\in\mathfrak M_{\mathrm{reg}}(\succeq)$，并在代数推导中省略其上标。该分解对每个赋值分别成立；下面的序数方案结果则针对原始次序或相容补全集合表述。
+
+所有转折、返回和重复都通过第~\ref{sec:compression} 节定义的总剖面 $V_s^\gamma$ 进入；引理~\ref{lem:net} 则由有序端点识别相应的净剖面。
+
+把穿孔限制记为
+\[
+ \lambda_{T_s}^{\circ}=\lambda_{T_s}|_{(0,R_s]},
+ \qquad
+ \lambda_{A_s}^{\circ}=\lambda_{A_s}|_{(0,R_s]},
+\]
+并定义
+\[
+ \mu_s=(\lambda_{T_s}^{\circ}+\lambda_{A_s}^{\circ})/2,
+ \qquad
+ \kappa_s=(\lambda_{T_s}^{\circ}-\lambda_{A_s}^{\circ})/2.
+\]
+于是 $\kappa_s\ll\mu_s$，且 Radon--Nikodym 导数
+\[
+ \theta_s=\dd\kappa_s/\dd\mu_s
+\]
+存在，并在 $\mu_s$ 几乎处处满足 $|\theta_s|\le1$。令 $P(0)=0$，并对侧 $s$ 上的 $x$ 定义
+\[
+ P(x)=-\mu_s((0,|x|]).
+\]
+再令 $A_s(\gamma)=h^{T_s}_\gamma(0)$ 表示从侧 $s$ 的目标达成次数。
+
+\begin{theorem}[势--总通行--达成分解]\label{thm:C}
+对每个归一化、正则且相容的支撑赋值 $\Lambda$，令 $P_\Lambda(0)=0$。其通行价值可以分解为
+\[
+\boxed{
+ U_\Lambda(\gamma)
+ =P_\Lambda(\gamma(1))-P_\Lambda(\gamma(0))
+ +\sum_{s\in\{L,R\}}\int V_s^\gamma\dd\kappa_{s,\Lambda}
+ +\sum_{s\in\{L,R\}}\alpha_{s,\Lambda} A_s(\gamma).}
+\]
+三项依次为端点进展、总通行调整和目标达成分量。等价地，中间项为
+\[
+ \sum_s\int V_s^\gamma\theta_{s,\Lambda}\dd\mu_{s,\Lambda}.
+\]
+对每个固定的 $\Lambda$，其归一化四个有向测度与 $(P_\Lambda,\kappa_{L,\Lambda},\kappa_{R,\Lambda},\alpha_{L,\Lambda},\alpha_{R,\Lambda})$ 之间的变换可逆。在推论~\ref{cor:common-scale} 下，归一化分解得到点识别；否则，本定理逐个赋值描述整个相容族。
+\end{theorem}
+
+\begin{proof}
+在每一侧，
+\[
+\begin{aligned}
+ \int N_s^T\dd\lambda_{T_s}^{\circ}
+ -\int N_s^A\dd\lambda_{A_s}^{\circ}
+ &=\int D_s^\gamma\dd\mu_s+\int V_s^\gamma\dd\kappa_s.
+\end{aligned}
+\]
+引理~\ref{lem:net} 把第一项积分转化为 $P(\gamma(1))-P(\gamma(0))$。目标原子贡献 $\alpha_s A_s(\gamma)$。对固定支撑赋值，$\mu_s$、$\kappa_s$ 与 $\alpha_s$ 的定义均可逆，再结合 $P(0)=0$，就得到所述一一重参数化。
+\end{proof}
+
+这些名称的区分具有实质内容。有符号测度 $\kappa_s$ 是\emph{总通行调整测度}：它记录在剔除端点分量后仍然保留的、对反向具有偶对称性的共同溢价或惩罚。由于 $V_s^\gamma$ 在一条开放单调路径上通常并非零，中间泛函是一种一般的总通行调整。对于穿越区间 $E$ 的闭合目标外循环，端点贡献为零，剩余价值 $2\kappa_s(E)$ 称为\emph{循环通行价值}。这里“通行迟滞”一词仅指这种静态、反转偶对称的调整；动态迟滞是另一种结构。
+
+\begin{corollary}[直接、绕行与触及目标历史]\label{cor:three-history}
+固定 $0<a<b<c\le R_R$ 以及右侧历史
+\[
+ \gamma^D:c\to b,
+ \qquad
+ \gamma^C:c\to a\to b,
+ \qquad
+ \gamma^A:c\to0\to b.
+\]
+它们的完整分解为
+\[
+\begin{aligned}
+ U(\gamma^D)
+  &=P(b)-P(c)+\kappa_R((b,c]),\\
+ U(\gamma^C)
+  &=P(b)-P(c)+\kappa_R((b,c])+2\kappa_R((a,b]),\\
+ U(\gamma^A)
+  &=P(b)-P(c)+\kappa_R((b,c])+2\kappa_R((0,b])+\alpha_R.
+\end{aligned}
+\]
+因此
+\[
+\begin{aligned}
+ U(\gamma^C)-U(\gamma^D)
+  &=2\kappa_R((a,b]),\\
+ U(\gamma^A)-U(\gamma^D)
+  &=2\kappa_R((0,b])+\alpha_R.
+\end{aligned}
+\]
+第一个差分是额外目标外“减量--复发”绕行的循环通行价值；第二个差分是额外触及目标绕行的总通行调整，加上一次从右侧到达目标的价值。左侧具有完全类似的公式。
+\end{corollary}
+
+\begin{proof}
+总通行剖面为
+\[
+\begin{aligned}
+ V_R^{\gamma^D}&=\1_{(b,c]},\\
+ V_R^{\gamma^C}&=\1_{(b,c]}+2\1_{(a,b]},\\
+ V_R^{\gamma^A}&=\1_{(b,c]}+2\1_{(0,b]}.
+\end{aligned}
+\]
+三条历史都有有序端点 $(c,b)$，故其端点贡献都是共同项 $P(b)-P(c)$。只有 $\gamma^A$ 到达目标，并且恰好从右侧到达一次。代入定理~\ref{thm:C} 即得三个完整公式及两个差分。
+\end{proof}
+
+这一重参数化在代数上很简单；其解释力来自路径几何对端点、重复通行和目标达成分量的分离。
+
+\subsection{无需选定赋值的反事实方案转移}
+
+上述分解为每个支撑赋值提供了基数描述，但可加通行记账还给出一个纯序数限制，而后者对受控方案选择更有用。只要两个实际历史对产生相同的账户差分，它们就必须具有相同的原始排名。该结论既不需要点识别，也不需要从支撑族中选定某一个赋值。
+
+\begin{theorem}[实际比较对差分不变性与方案转移]\label{thm:D}
+假设 BPCC。若四条实际历史满足
+\[
+ q(\gamma)-q(\eta)=q(\gamma')-q(\eta'),
+\]
+则
+\[
+ \gamma\succeq\eta
+ \quad\Longleftrightarrow\quad
+ \gamma'\succeq\eta'.
+\]
+严格偏好与无差异也满足同样的等价关系。
+
+特别地，固定 $a>0$，并考虑两个右侧方案环境 $j=1,2$，满足 $0<a<b_j<c_j$。定义
+\[
+ \gamma_j^A:c_j\to0\to b_j,
+ \qquad
+ \gamma_j^C:c_j\to a\to b_j.
+\]
+则
+\[
+ q(\gamma_1^A)-q(\gamma_1^C)
+ =q(\gamma_2^A)-q(\gamma_2^C),
+\]
+因此，在两个环境中，触及目标的方案相对于在 $a$ 处转折的方案具有完全相同的弱偏好、严格偏好或无差异关系。若每一对内部的非通行后果都得到控制，则即使两个环境的初始状态和终止状态不同，一个已观察的方案排名也能预测另一个。
+\end{theorem}
+
+\begin{proof}
+由命题~\ref{prop:realcone}，在 BPCC 下，一个实际差分属于揭示锥 $C$ 当且仅当对应的弱比较成立。因此，相同账户差分意味着两个弱比较等价。对反向差分应用同样论证，又得到反向弱比较等价，从而严格偏好和无差异也等价。
+
+对于所展示的目标接触方案，共同部分相互抵消。相对于 $\gamma_j^C$，路径 $\gamma_j^A$ 增加一次在 $[0,a]$ 上到达目标的趋向目标 通行，并把 $(a,b_j]$ 上的远离目标 通行替换成 $(0,b_j]$ 上的远离目标 通行。最终账户差分对两个 $j$ 都是 $(0,a]$ 上相同的“到达目标/远离目标”对比，与 $b_j$、$c_j$ 无关。
+\end{proof}
+
+在每一个正则支撑赋值下，定理~\ref{thm:D} 中的共同差分具有价值
+\[
+ 2\kappa_{R,\Lambda}((0,a])+\alpha_{R,\Lambda}.
+\]
+这一恒等式在整个支撑族上解释了被转移的比较。仅依赖端点的通行偏好把该共同对比设为零，因此在两个菜单中都预测无差异。于是，一个菜单中的严格受控选择会拒绝该子类；在 BPCC 下，它还会预测每一个能够实现同一通行账户差分的其他实际菜单中的相应严格选择。
+
+\begin{corollary}[目标外循环与收缩的目标返回循环]\label{cor:loops}
+对侧 $s$ 上穿过 $(a,b]$ 的典范目标外往返，
+\[
+ U(C_{s;a,b})=2\kappa_s((a,b]).
+\]
+对一个半径为 $\varepsilon$、从目标出发进入侧 $s$ 并从该侧返回目标的循环，
+\[
+ U(C_{\varepsilon,s})
+  =2\kappa_s((0,\varepsilon])+\alpha_s
+  \longrightarrow\alpha_s
+ \qquad\text{当 }\varepsilon\downarrow0.
+\]
+因此，在任意固定支撑赋值下，目标外循环隔离总通行调整测度；而收缩的目标返回循环在穿孔调整消失后隔离目标达成残差。有限序数数据通过整个相容族识别这些量，而不是仅凭某一个赋值层面的恒等式。
+\end{corollary}
+
+\begin{corollary}[仅依赖端点的子类]\label{cor:endpoint-class}
+在定理~\ref{thm:B} 的完整路径域上，原始通行偏好仅依赖有序端点，当且仅当对每个 $\Lambda\in\mathfrak M_{\mathrm{reg}}(\succeq)$ 都有
+\[
+ \kappa_{L,\Lambda}=\kappa_{R,\Lambda}=0,
+ \qquad
+ \alpha_{L,\Lambda}=\alpha_{R,\Lambda}=0.
+\]
+左右两侧仍可以具有不同的势测度；除非推论~\ref{cor:common-scale} 成立，不同的正则支撑赋值也可以导出不同的以目标为中心的端点势。
+\end{corollary}
+
+\begin{proof}
+若原始通行偏好仅依赖有序端点，则每一个目标外往返和每一个目标返回循环都与停留无差异。精确一致同意于是使每个支撑赋值在这些循环上取零。推论~\ref{cor:loops} 先给出所有穿孔区间上的 $\kappa_s=0$，继而得到 $\alpha_s=0$。反过来，若每个支撑赋值都满足 $\kappa_L=\kappa_R=0$ 且 $\alpha_L=\alpha_R=0$，则定理~\ref{thm:C} 使每个支撑价值仅依赖有序端点；定理~\ref{thm:B} 的一致同意进一步把同一性质传递给原始次序。
+\end{proof}
+
+在固定初始状态下，这一子类就是一个以目标为中心的终止状态次序。定理~\ref{thm:C} 隔离了由总有向通行和实际目标达成所携带的额外历史内容。
