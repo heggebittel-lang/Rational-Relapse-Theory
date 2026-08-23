@@ -1,8 +1,8 @@
 {
-  "title": "Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation",
+  "title": "Compensated Choice and Recursive Counterfactual Identification",
   "upload_type": "publication",
   "publication_type": "workingpaper",
-  "description": "Archival release of the two-experiment compensated-choice stage of the Rational Relapse Theory research program, originally submitted as JME-D-26-00519. The paper uses compensated switching thresholds and money-metric comparisons to study state-dependent valuation, revealed reinforcement, recovery value, cross-experiment compatibility, and a common state-dependent value geometry. The release includes the English historical manuscript and a Chinese archival translation. Later archive versions further recast the project around recursive and current-choice counterfactual identification.",
+  "description": "Archival release of the recursive counterfactual-identification stage of the Rational Relapse Theory research program, originally labeled recursive_monetary_comparison_core_theory_v9_1. The paper studies compensated current choice in a recursive environment, including transition matching, same-index propagation under a recursive marginal restriction, and the counterfactual response directions identified after propagation. The surviving English PDF is the authoritative historical artifact because the original LaTeX source was lost. A reconstructed English source and a Chinese archival translation are included as preservation aids and are explicitly labeled as such. Later v9.0 further narrows the project toward compensated current choice and the information structure required for local counterfactual identification.",
   "creators": [
     {
       "name": "Cheng, Yushang",
@@ -10,13 +10,13 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "v7.0",
+  "version": "v8.0",
   "keywords": [
     "compensated choice",
-    "revealed reinforcement",
-    "recovery value",
-    "state-dependent valuation",
-    "identification",
+    "recursive identification",
+    "transition matching",
+    "index propagation",
+    "counterfactual comparative statics",
     "revealed preference"
   ]
 }
