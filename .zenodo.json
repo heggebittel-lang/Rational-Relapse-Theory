@@ -1,8 +1,8 @@
 {
-  "title": "Recovery Histories: Exact Passage Compression and Additive Choice",
+  "title": "Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation",
   "upload_type": "publication",
   "publication_type": "workingpaper",
-  "description": "Archival release of the recovery-histories stage of the Rational Relapse Theory research program, originally labeled JET_Recovery_Histories_v25. The paper studies exact passage compression of target-relative adjustment histories, including a universal passage carrier, path fibers, balance and cancellation conditions, directed Stieltjes representation, and finite-data implications on a non-additively-closed history domain. The release includes the English historical manuscript and a Chinese archival translation preserving the theorem and label structure. Later archive versions substantially revise the primitives, terminology, and identification focus.",
+  "description": "Archival release of the two-experiment compensated-choice stage of the Rational Relapse Theory research program, originally submitted as JME-D-26-00519. The paper uses compensated switching thresholds and money-metric comparisons to study state-dependent valuation, revealed reinforcement, recovery value, cross-experiment compatibility, and a common state-dependent value geometry. The release includes the English historical manuscript and a Chinese archival translation. Later archive versions further recast the project around recursive and current-choice counterfactual identification.",
   "creators": [
     {
       "name": "Cheng, Yushang",
@@ -10,13 +10,13 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "v6.0",
+  "version": "v7.0",
   "keywords": [
-    "recovery histories",
-    "passage compression",
-    "additive choice",
-    "path fibers",
-    "Stieltjes representation",
-    "measurement"
+    "compensated choice",
+    "revealed reinforcement",
+    "recovery value",
+    "state-dependent valuation",
+    "identification",
+    "revealed preference"
   ]
 }
