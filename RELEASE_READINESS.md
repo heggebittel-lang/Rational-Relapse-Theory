@@ -1,52 +1,41 @@
 # Release Readiness Checklist
 
-This checklist separates the **minimum archival record** needed before creating each GitHub Release from optional source material. The goal is to avoid delaying the DOI sequence for cosmetic symmetry.
+This file records the completed archival release sequence for v4.0–v9.0. The goal was to preserve the authoritative historical PDFs, bilingual companions where prepared, provenance notes, checksums, and version-specific Zenodo citation objects without forcing cosmetic symmetry across all historical folders.
 
 ## Minimum release standard
 
-A version is release-ready when the repository contains:
+A version was treated as release-ready when the repository contained:
 
 1. the authoritative historical PDF;
-2. the Chinese or English companion PDF when one has been prepared;
+2. the Chinese or English companion PDF when one had been prepared;
 3. a version `README.md` explaining manuscript identity and translation/reconstruction status;
 4. `PRIORITY_AND_PROVENANCE.md`;
 5. `RELEASE_NOTES.md`;
-6. `SHA256SUMS.txt` matching the files intended for release.
+6. an integrity record matching the files intended for release.
 
-LaTeX sources and figure files are recommended preservation assets, but they are not required for the DOI sequence if the authoritative PDFs and provenance record are already present.
+LaTeX sources and figure files were treated as recommended preservation assets rather than DOI-blocking requirements when the authoritative PDFs and provenance record were already present.
 
-## Current status
+## Final status
 
-| Version | Authoritative PDF | Companion PDF | Provenance | Checksums | Status |
+| Version | Authoritative PDF | Companion PDF | Provenance | Integrity record | Status |
 |---|---:|---:|---:|---:|---|
-| v4.0 | Chinese PDF present and verified | English PDF present and verified | yes | matches uploaded PDFs | **released — DOI 10.5281/zenodo.22067123** |
-| v5.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067231** |
-| v6.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067292** |
-| v7.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067412** |
+| v4.0 | Chinese PDF present and verified | English PDF present and verified | yes | verified | **released — DOI 10.5281/zenodo.22067123** |
+| v5.0 | English PDF present | Chinese PDF present | yes | verified | **released — DOI 10.5281/zenodo.22067231** |
+| v6.0 | English PDF present | Chinese PDF present | yes | verified | **released — DOI 10.5281/zenodo.22067292** |
+| v7.0 | English PDF present | Chinese PDF present | yes | verified | **released — DOI 10.5281/zenodo.22067412** |
 | v8.0 | surviving English PDF present | Chinese PDF present | yes; source-loss note explicit | standardized | **released — DOI 10.5281/zenodo.22067461** |
-| v9.0 | English endpoint PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | **next and final release** |
+| v9.0 | English endpoint PDF present | Chinese PDF present | yes | verified | **released — DOI 10.5281/zenodo.22067526** |
 
 ## Version-specific Zenodo rule
 
-The GitHub repository preserves the complete v1.0–v9.0 research history, but each Zenodo citation object should contain only the archive folder for the corresponding stage. If the GitHub integration produces a whole-repository source archive, replace that file set with the version-only archive before treating the DOI record as final.
+The GitHub repository preserves the complete v1.0–v9.0 research history, while each Zenodo citation object for v4.0–v9.0 contains only the archive folder for the corresponding stage. This avoids using a whole-repository snapshot as the primary citation object for an individual historical manuscript.
 
-## Recommended, non-blocking source preservation
+## Non-blocking preservation assets
 
-When convenient, the following source files can also be committed or included in the corresponding version archive:
+Additional source files and figures may remain in the repository or in release packages for reproducibility. Their presence is archival support and does not reopen the theoretical content. In particular, the v8.0 surviving PDF remains the authoritative historical English artifact; reconstructed source material is labeled accordingly.
 
-- v4.0: original Chinese TeX, English companion TeX, fold and Neimark–Sacker illustrations;
-- v5.0: English and Chinese TeX plus the three historical figures and graphical abstract;
-- v6.0: original English source, Chinese source, path-accounting figures and bibliography;
-- v7.0: English/Chinese sources, five figures and graphical abstract;
-- v8.0: reconstructed English source and Chinese source, always labeled as reconstructed/translation material;
-- v9.0: English source and the four final figures; Chinese source is already represented in the repository.
+## Completion
 
-These additions improve reproducibility but should not reopen the theoretical content.
+The v4.0–v9.0 GitHub Release → Zenodo DOI sequence is complete. Together with the earlier v1.0–v3.0 records, all nine archive stages now have persistent DOI citations.
 
-## Final release step
-
-The remaining release sequence is now simply:
-
-`v9.0 → Zenodo DOI → final metadata and citation audit`
-
-The root `.zenodo.json` should describe v9.0 before the GitHub release is created. After Zenodo assigns the v9.0 DOI and the deposited file set is verified, update the v9.0 README, root README, `ARCHIVE_INDEX.md`, and repository-level citation metadata as appropriate.
+Future changes that materially alter a released manuscript should receive a new archive/release version rather than silently replacing the existing DOI object.
