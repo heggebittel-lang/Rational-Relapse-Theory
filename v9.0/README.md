@@ -4,9 +4,9 @@
 **Chinese title:** 《补偿性当前选择与反事实识别》  
 **Original internal label:** Compensated_Current_Choice_v38_Economic_Grounding  
 **Language:** English + Chinese  
-**Archive status:** Current endpoint of the project; release-ready  
-**Planned release tag:** `v9.0`  
-**Zenodo DOI:** pending release
+**Archive status:** Released; current endpoint of the project  
+**Release tag:** `v9.0`  
+**Zenodo DOI:** [10.5281/zenodo.22067526](https://doi.org/10.5281/zenodo.22067526)
 
 ## Manuscript identity
 
@@ -27,8 +27,10 @@ The Chinese version is a translation of the same v9.0 scholarly object, not a se
 - `SHA256SUMS.txt` — hashes of the exact bilingual release candidates and shared figures
 - `PRIORITY_AND_PROVENANCE.md` — provenance, priority, reuse, and release record
 
-The intended publication object is one bilingual GitHub Release (`v9.0`) archived by Zenodo under one version DOI. The Zenodo citation object should contain only the `v9.0/` archive rather than the complete repository snapshot.
+The publication object is the bilingual GitHub Release `v9.0`, archived by Zenodo under the DOI above. The Zenodo citation object contains only the `v9.0/` archive rather than the complete repository snapshot.
 
-After the DOI is minted, it should be added here, to the root version table, and to `ARCHIVE_INDEX.md`. Because v9.0 is the current endpoint, the repository-level citation metadata should also be checked against the final DOI.
+## Citation policy
+
+Please cite this version using its Zenodo DOI. The English manuscript and Chinese translation belong to the same v9.0 scholarly object and should not be treated as separate theoretical versions.
 
 Future changes that materially alter the paper's claims should receive a new archive/release version rather than silently replacing this object after a DOI has been minted.
