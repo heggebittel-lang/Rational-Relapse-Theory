@@ -1,0 +1,30 @@
+\section{多个环境的扩展}
+\label{sec:environment-network}
+
+令 $\mathcal J$ 为有限环境集合，并写
+\[
+\Psi_J=V\circ\Gamma_J.
+\]
+对任何已经由比较数据识别的线性局部泛函 $\mathcal L$，定义观测到的成对修正
+\[
+\eta_{JK}^{\mathcal L}=\mathcal L(\Psi_J-\Psi_K).
+\]
+这些量就是以各环境为节点的图上的普通势差。
+
+\begin{proposition}[路径无关性]
+\label{thm:path-independence}
+令 $\mathsf B$ 为环境图的节点--边关联矩阵，并令 $\eta^{\mathcal L}$ 收集带方向的边修正。下列条件等价：
+\begin{enumerate}[label=(\roman*)]
+\item 存在节点势 $\theta_J$，使每条观测边上都有 $\eta_{JK}^{\mathcal L}=\theta_J-\theta_K$；
+\item 对每个 $c\in\ker\mathsf B$，都有 $c^{\mathsf T}\eta^{\mathcal L}=0$；
+\item 两个连通环境之间的路径和与所选路径无关。
+\end{enumerate}
+在共同延续表示下，可以取 $\theta_J=\mathcal L\Psi_J$。因此，一棵生成树就足以恢复一个连通分量中任意参考环境到目标环境的修正，而每一条独立的非树边都会提供一个循环型过度识别限制。
+\end{proposition}
+
+\begin{proof}
+第一个条件等价于 $\eta^{\mathcal L}=\mathsf B^{\mathsf T}\theta$。由于
+$\operatorname{col}(\mathsf B^{\mathsf T})=(\ker\mathsf B)^\perp$，它与第二个条件等价。路径结论由望远镜相消立即得到。
+\end{proof}
+
+这个扩展并没有引入第二种识别机制。当前比较图识别边修正；环境图只是在此基础上组织已经识别的势差。若某个目标环境位于参考环境连通分量之外，则仅凭这些边差异无法确定从参考环境到该目标环境的修正。
