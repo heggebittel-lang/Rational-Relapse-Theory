@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the specific archived version you use and, once available,
+  its version-specific Zenodo DOI. The preferred citation below points to
+  the current endpoint of the research program.
+title: "Rational Relapse Theory: Research Archive"
+type: dataset
+authors:
+  - family-names: Cheng
+    given-names: Yushang
+    orcid: "https://orcid.org/0009-0001-3218-6423"
+repository-code: "https://github.com/heggebittel-lang/Rational-Relapse-Theory"
+license: CC-BY-4.0
+keywords:
+  - revealed preference
+  - compensated choice
+  - counterfactual identification
+  - rational addiction
+  - recovery value
+  - additive measurement
+  - research archive
+preferred-citation:
+  type: report
+  title: "Compensated Current Choice and Counterfactual Identification"
+  authors:
+    - family-names: Cheng
+      given-names: Yushang
+      orcid: "https://orcid.org/0009-0001-3218-6423"
+  year: 2026
+  url: "https://github.com/heggebittel-lang/Rational-Relapse-Theory/tree/main/v9.0"
