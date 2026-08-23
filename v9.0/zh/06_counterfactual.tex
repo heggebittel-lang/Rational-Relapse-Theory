@@ -1,0 +1,102 @@
+\section{反事实比较静态}
+\label{sec:counterfactual}
+
+令 $A$ 为已观测的锚环境，$B$ 为目标环境。写为
+\begin{equation}
+W_J(x,a)=u_J(x,a)+V(\Gamma_J(x,a)),
+\qquad J\in\{A,B\},
+\label{eq:WJ-decomp-v19}
+\end{equation}
+其中当前侧差异 $u_B-u_A$ 已知。令
+\begin{align}
+d_{xa}&:=(u_B-u_A)_{xa},
+\label{eq:d-xa-v19}\\
+d_{xx}&:=(u_B-u_A)_{xx}.
+\label{eq:d-xx-v19}
+\end{align}
+由于 $H=V\circ\Gamma_A-V\circ\Gamma_B$，第~\ref{sec:shrinking} 节识别的修正项满足
+\begin{align}
+\boxed{W_{B,xa}=W_{A,xa}+d_{xa}-\eta_{xa},}
+\label{eq:transport-xa-v19}\\
+\boxed{W_{B,xx}=W_{A,xx}+d_{xx}-\eta_{xx}.}
+\label{eq:transport-xx-v19}
+\end{align}
+
+令 $C_B(x,a)$ 为目标环境中的货币资源成本。观测到目标基准选择 $x=g_B(a_0)$。假设它是内部严格局部最优点，并且在所考察点上
+\begin{equation}
+C_{B,xx}-W_{B,xx}>0.
+\label{eq:target-regularity-v19}
+\end{equation}
+
+\begin{theorem}[反事实比较静态]
+\label{thm:counterfactual-v19}
+在 $(g_B(a_0),a_0)$ 处，假设环境 $A$ 中的补偿观测识别 $W_{A,xa}$ 与 $W_{A,xx}$，当前侧导数 $d_{xa}$ 与 $d_{xx}$ 已知，并且局部比较设计包含满足式~\eqref{eq:moment-limit}--\eqref{eq:moment-variation}、分别对应 $\partial_{xa}$ 与 $\partial_{xx}$ 的有限差分权重。则 $D_ag_B(a_0)$ 得到点识别，且
+\begin{equation}
+\boxed{
+D_ag_B(a_0)
+=
+\frac{
+W_{A,xa}+d_{xa}-\eta_{xa}-C_{B,xa}
+}{
+C_{B,xx}-W_{A,xx}-d_{xx}+\eta_{xx}
+}.}
+\label{eq:main-response-v19}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+目标环境的一阶条件为
+\[
+W_{B,x}(g_B(a),a)=C_{B,x}(g_B(a),a).
+\]
+沿正则局部分支求导，得到
+\[
+(C_{B,xx}-W_{B,xx})D_ag_B
+=
+W_{B,xa}-C_{B,xa}.
+\]
+利用式~\eqref{eq:transport-xa-v19}--\eqref{eq:transport-xx-v19} 以及定理~\ref{thm:primitive-local} 识别 $\eta_{xa}$ 与 $\eta_{xx}$。
+\end{proof}
+
+当环境 $A$ 中可以观察邻近补偿比较时，式~\eqref{eq:pi-derivatives} 给出
+\begin{equation}
+W_{A,xa}=\pi_{A,a},
+\qquad
+W_{A,xx}=\pi_{A,x},
+\label{eq:anchor-pi-derivs-v19}
+\end{equation}
+于是
+\begin{equation}
+\boxed{
+D_ag_B(a_0)
+=
+\frac{
+\pi_{A,a}+d_{xa}-\eta_{xa}-C_{B,xa}
+}{
+C_{B,xx}-\pi_{A,x}-d_{xx}+\eta_{xx}
+}.}
+\label{eq:anchor-to-target-v19}
+\end{equation}
+当环境 $B$ 中也可以观察邻近补偿比较时，式~\eqref{eq:direct-gprime} 可直接使用。
+
+\subsection{高阶比较静态}
+\label{sec:policy-hierarchy}
+
+令
+\[
+F_B(x,a)=W_{B,x}(x,a)-C_{B,x}(x,a),
+\qquad
+F_B(g_B(a),a)=0.
+\]
+重复使用隐式求导是标准做法。一旦 $D_ag_B(a_0),\ldots,D_a^{r-1}g_B(a_0)$ 已知，进入 $D_a^rg_B(a_0)$ 的唯一新的 $(r+1)$ 阶延续项是方向泛函
+\begin{equation}
+\boxed{
+\left(\partial_a+D_ag_B(a_0)\partial_x\right)^r H_x(z_0),
+\qquad z_0=(g_B(a_0),a_0),}
+\label{eq:response-correction-directional}
+\end{equation}
+其中微分算子中的系数 $D_ag_B(a_0)$ 保持固定。因此，只要循环矩生成式~\eqref{eq:response-correction-directional}，并结合已知的参考环境导数、当前侧导数和成本导数，定理~\ref{thm:higher-order-differences} 就识别第 $r$ 阶政策导数。无需恢复完整的 $(r+1)$ 阶延续 jet。例如，为识别 $D_a^2g_B(a_0)$ 所需的新三阶延续项为
+\[
+H_{xaa}+2(D_ag_B)H_{xxa}+(D_ag_B)^2H_{xxx}.
+\]
+因此，第~\ref{sec:higher-order} 节中的阶次分离直接传递到高阶比较静态。
