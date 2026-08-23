@@ -1,0 +1,172 @@
+\section{全局一致性与支撑通行赋值}\label{sec:ordinal}
+
+通用账户只描述通行而不对其赋值。下一步的问题是：一个个体对实际历史的比较，能否在账户空间上支撑一致的可加赋值。BPCC 使揭示出来的可加次序在实际历史上保持精确，同时保留未揭示形式差分上的偏序性。PVBC 则刻画何时阿基米德完备化能够保持这些实际历史比较。由此得到的表示通常是一族归一化的实数支撑赋值。
+
+\subsection{典范有序包络}
+
+令 $\succeq$ 为 $\Pth$ 上的一个弱序。定义比较锥
+\[
+ \mathcal C_{\succeq}
+ =\left\{
+  \sum_{i=1}^n\bigl(q(\gamma_i)-q(\eta_i)\bigr):
+  \gamma_i\succeq\eta_i
+ \right\}\subseteq\mathfrak L,
+\]
+对称子群
+\[
+ \mathcal N_{\succeq}
+ =\mathcal C_{\succeq}\cap(-\mathcal C_{\succeq}),
+\]
+以及商群
+\[
+ G_{\succeq}=\mathfrak L/\mathcal N_{\succeq}.
+\]
+比较锥的像在 $G_{\succeq}$ 上定义一个偏序。记 $J_{\succeq}=\pi_{\succeq}\circ q$。
+
+$\mathcal C_{\succeq}$ 中的有限和就是一致性证书：它们把实际历史比较所揭示的账户差分聚合起来，即使最终得到的形式和本身位于可行历史域之外。
+
+\begin{definition}[平衡通行循环一致性（BPCC）]
+若不存在有限列表 $\gamma_i\succeq\eta_i$，其中至少有一个严格比较，并满足
+\[
+ \sum_i q(\gamma_i)=\sum_i q(\eta_i),
+\]
+则称 BPCC 成立。
+\end{definition}
+
+\begin{proposition}[典范有序包络与 BPCC 的精确性]\label{prop:envelope}
+对任意弱序，$G_{\succeq}$ 都是一个偏序阿贝尔群，且 $J_{\succeq}$ 具有单调性、弱时间变换不变性并对拼接可加。BPCC 成立，当且仅当
+\[
+ \gamma\succeq\eta
+ \quad\Longleftrightarrow\quad
+ J_{\succeq}(\gamma)\ge J_{\succeq}(\eta).
+\]
+任意取值于有序阿贝尔群、且单调可行的赋值，都通过一个正同态唯一地因子分解于 $J_{\succeq}$。
+\end{proposition}
+
+该命题赋予 BPCC 三个精确作用：它排除平衡的严格改进循环；使典范映射在实际历史上精确；并使典范商在所有单调可加赋值中具有通用性。特别地，只有一次比较时得到
+\[
+ q(\gamma)=q(\eta)
+ \quad\Longrightarrow\quad
+ \gamma\sim\eta.
+\]
+因此，通行纤维上的偏好无差异是由 BPCC 推出的，而不是作为原始公理直接加入。
+
+\subsection{实际历史次序上的成对实数分离}
+
+在实数分离步骤中，记
+\[
+ d(\gamma,\eta)=q(\gamma)-q(\eta),
+ \qquad
+ E=\mathfrak L\otimes_{\Z}\R,
+\]
+并定义实数揭示锥与无差异空间
+\[
+ C=\cone\{d(\gamma,\eta):\gamma\succeq\eta\},
+ \qquad
+ I=\spanr\{d(\gamma,\eta):\gamma\sim\eta\}.
+\]
+任意有限个通行向量都位于某个共同有限网格上，因此实锥证书可以有理化并通过清除分母转化为整数证书。
+
+\begin{proposition}[精确实数化揭示锥]\label{prop:realcone}
+在 BPCC 下，
+\[
+ C\cap(-C)=I,
+\]
+并且对于实际历史，
+\[
+ d(\gamma,\eta)\in C
+ \quad\Longleftrightarrow\quad
+ \gamma\succeq\eta.
+\]
+\end{proposition}
+
+转到 $V=E/I$ 与 $K=C/I$。对于一个非空典范区间 $J$，定义其有利账户差分为
+\[
+ x_m(J)=
+ \begin{cases}
+  d(p_m(J),c_0),&m\in\{T_L,T_R\},\\
+  d(c_0,p_m(J)),&m\in\{A_L,A_R\}.
+ \end{cases}
+\]
+在假设~\ref{ass:directional} 下，在每个模块中选取一个全范围区间 $J_m$，并令
+\[
+ u=\sum_{m\in\M}x_m(J_m),
+ \qquad e=u+I\in V.
+\]
+细分关系使 $e$ 成为序单位：对每个 $v\in V$，都存在有限的 $r>0$ 使其位于 $-re$ 与 $re$ 之间。任意两个全支撑基准都会生成同一个完备化，因为它们彼此都能被有限正倍数支配。
+
+定义阿基米德闭包
+\[
+ K^{\mathrm a}
+ =\left\{v\in V:\ v+n^{-1}e\in K\text{ 对每个 }n\in\N\right\},
+\]
+其线性部分 $N=K^{\mathrm a}\cap(-K^{\mathrm a})$，以及阿基米德化的序单位空间
+\[
+ \widehat V=V/N,
+ \qquad
+ \widehat K=K^{\mathrm a}/N,
+ \qquad
+ \widehat e=e+N.
+\]
+令 $\rho:V\to\widehat V$ 为商映射，并记
+\[
+ \widehat d_{\gamma\eta}=\rho(d(\gamma,\eta)+I).
+\]
+
+\begin{definition}[成对消失基准一致性（PVBC）]\label{def:pvbc}
+若对每一对实际历史 $\gamma,\eta$，都有
+\[
+ d(\gamma,\eta)+I\in K^{\mathrm a}
+ \quad\Longrightarrow\quad
+ \gamma\succeq\eta.
+\]
+等价地，若 $\eta\succ\gamma$，则存在有限重复次数 $n=n(\eta,\gamma)$，使得一个固定全支撑基准不再支持“用 $n$ 份 $\gamma$ 补偿 $n$ 份 $\eta$”这一派生比较。不同严格比较之间不要求存在共同的重复次数上界。
+\end{definition}
+
+对小明而言，PVBC 的含义是：如果两条戒烟历史之间存在真实劣势，那么当同一劣势重复足够多次时，它最终会超过一个固定恢复基准。所需重复次数依赖于具体比较对，并且可以任意大。该条件排除了实际历史上的无穷小严格排序，同时保留未揭示形式组合的偏序性，也不限制闭合游程的取值。
+
+归一化支撑赋值是一个线性泛函 $\varphi:\widehat V\to\R$，满足
+\[
+ \varphi(\widehat K)\subseteq\R_+,
+ \qquad
+ \varphi(\widehat e)=1.
+\]
+令 $\mathcal S$ 表示所有此类赋值的集合，并定义
+\[
+ U_\varphi(\gamma)=\varphi\!\left(\rho(q(\gamma)+I)\right).
+\]
+
+\begin{theorem}[实际历史上的成对实数分离]\label{thm:A}
+假设 BPCC 与严格方向单调性成立。则 PVBC 成立，当且仅当归一化支撑族 $\mathcal S$ 精确表示实际路径次序：
+\[
+ \gamma\succeq\eta
+ \quad\Longleftrightarrow\quad
+ U_\varphi(\gamma)\ge U_\varphi(\eta)
+ \quad\text{对每个 }\varphi\in\mathcal S.
+\]
+族 $\mathcal S$ 非空、凸，并且在 $\widehat V$ 上逐点收敛拓扑下为紧集。若 $\eta\succ\gamma$，则每个归一化支撑赋值都弱排序 $\eta$ 高于 $\gamma$，且至少有一个支撑赋值给出严格排序。
+\end{theorem}
+
+\begin{proof}[证明思路]
+锥 $\widehat K$ 是闭的、尖的，并具有序单位 $\widehat e$。因此正分离给出
+\[
+ \widehat v\in\widehat K
+ \quad\Longleftrightarrow\quad
+ \varphi(\widehat v)\ge0\quad\forall\varphi\in\mathcal S.
+\]
+实际弱比较位于 $K\subseteq K^{\mathrm a}$。反过来，一致同意把一个实际差分放入 $K^{\mathrm a}$，PVBC 再把它还原成原始弱比较。逆向论证给出必要性。关于实锥、阿基米德化、分离与紧性的细节见附录~\ref{app:ordered}。
+\end{proof}
+
+不同的归一化支撑赋值可以在那些未被实际历史比较固定的形式方向上意见不一，但它们的一致同意仍恢复实际历史上的原始次序。因此，单个 $U_\varphi$ 可能把一个原始严格比较判为无差异；严格性只保证在支撑族中的至少某个成员上出现。下面的单点情形则是一个特殊情况：一个归一化赋值单独就忠实表示次序。
+
+\begin{remark}[有限网格并不会自动保证 PVBC]\label{rem:finitegrid-pvbc}
+有限物理网格使账户空间有限维，却不限制路径重复次数，因此它本身并不能排除无穷小严格比较。例如，在一个网格上只有一个有利的趋向目标 单元 $T$ 及其不利的反向 远离目标 单元 $A$，在字典序群 $\Z^2$ 中赋值
+\[
+ \Phi(T)=(1,0),
+ \qquad
+ \Phi(A)=(-1,1).
+\]
+按照通行账户的字典序值对实际历史排序，并给其他有利单元赋予第一坐标为正的向量。于是 $T\succ0\succ A$，且由于偏好由一个可加线性有序阿贝尔群诱导，BPCC 成立。闭合循环 $T+A$ 的值为 $(0,1)>_{\mathrm{lex}}0$，然而无论把该循环重复有限多少次，都无法超过任何第一坐标为正的全支撑基准。因此，在有限网格上 BPCC 与方向单调性可以同时成立而 PVBC 失败。有限经验设计则不同：尽管无限制的有限网格路径次序未必是阿基米德的，但有限多个已观察不等式会生成一个多面体补全问题。
+\end{remark}
+
+BPCC 是通行可加性背后的有限列表一致性条件。附录~\ref{app:primitive} 通过构造只含六个备选项但原始平衡证书所需重复次数无界的族，衡量这一条件的全局深度。这种有限证书逻辑与定性概率中的消去条件接近 \citep{KraftPrattSeidenberg1959,ChateauneufJaffray1984}，而支撑族分离表示则与多效用理论相联系 \citep{Ok2002,DubraMaccheroniOk2004,EvrenOk2011}。
