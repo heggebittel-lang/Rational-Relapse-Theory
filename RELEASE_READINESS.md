@@ -23,8 +23,8 @@ LaTeX sources and figure files are recommended preservation assets, but they are
 | v5.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067231** |
 | v6.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067292** |
 | v7.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067412** |
-| v8.0 | surviving English PDF present | Chinese PDF present | yes; source-loss note explicit | standardized | **next release** |
-| v9.0 | English endpoint PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | ready for final review |
+| v8.0 | surviving English PDF present | Chinese PDF present | yes; source-loss note explicit | standardized | **released — DOI 10.5281/zenodo.22067461** |
+| v9.0 | English endpoint PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | **next and final release** |
 
 ## Version-specific Zenodo rule
 
@@ -43,10 +43,10 @@ When convenient, the following source files can also be committed or included in
 
 These additions improve reproducibility but should not reopen the theoretical content.
 
-## Release sequence
+## Final release step
 
-Continue sequentially:
+The remaining release sequence is now simply:
 
-`v8.0 → Zenodo DOI → update metadata → v9.0`
+`v9.0 → Zenodo DOI → final metadata and citation audit`
 
-Before each GitHub release, advance the root `.zenodo.json` to the next version's metadata. After Zenodo assigns a DOI and its deposited file set is verified, update the version README, root README, and `ARCHIVE_INDEX.md` before moving on.
+The root `.zenodo.json` should describe v9.0 before the GitHub release is created. After Zenodo assigns the v9.0 DOI and the deposited file set is verified, update the v9.0 README, root README, `ARCHIVE_INDEX.md`, and repository-level citation metadata as appropriate.
