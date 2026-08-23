@@ -1,8 +1,8 @@
 {
-  "title": "Rational Relapse Theory Archive v4.0: Axiomatic Endogenous-Recovery Structural Model",
+  "title": "Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction",
   "upload_type": "publication",
   "publication_type": "workingpaper",
-  "description": "Archival release of the June 2026 manuscript stage originally labeled v6.2. This version develops an axiomatic endogenous-recovery structural model within rational addiction. The release preserves the original Chinese manuscript together with an English archival companion and provenance metadata. Later archive versions revise both the terminology and the claimed contribution; this record is retained as a historical stage rather than as the author's current theoretical position.",
+  "description": "Archival release of the path-generated-domain stage of the Rational Relapse Theory research program, originally submitted as JME-S-26-00480. The paper shifts the primitive object from a recovery utility function to target-relative continuous paths and accessible ledgers, and studies a finite-cancellation and Stieltjes-representation route. Rational addiction is treated as the leading economic application. The release includes the English historical manuscript and a Chinese archival translation. Later versions substantially revise the primitives, terminology, and contribution claims.",
   "creators": [
     {
       "name": "Cheng, Yushang",
@@ -10,13 +10,13 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "v4.0",
+  "version": "v5.0",
   "keywords": [
-    "rational addiction",
-    "endogenous recovery",
-    "target stock",
-    "dynamic choice",
-    "bifurcation",
-    "research archive"
+    "additive measurement",
+    "path-generated domains",
+    "finite cancellation",
+    "Stieltjes representation",
+    "directed recovery",
+    "rational addiction"
   ]
 }
