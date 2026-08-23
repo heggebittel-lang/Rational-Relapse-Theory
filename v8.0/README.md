@@ -2,8 +2,8 @@
 
 **Original internal label:** `recursive_monetary_comparison_core_theory_v9_1`  
 **Language:** English + Chinese archival translation  
-**Planned release tag:** `v8.0`  
-**Zenodo DOI:** pending release
+**Release tag:** `v8.0`  
+**Zenodo DOI:** [10.5281/zenodo.22067461](https://doi.org/10.5281/zenodo.22067461)
 
 ## Manuscript identity
 
@@ -16,11 +16,15 @@ The original LaTeX source for this historical version was lost. The surviving PD
 ## Files
 
 - `v8.0.pdf` — authoritative surviving English historical PDF.
-- `v8.0_reconstructed.tex` — reconstructed English archival LaTeX source (prepared for the release package).
-- `v8.0_zh.pdf` — Chinese archival translation (prepared for the release package).
-- `v8.0_zh.tex` — Chinese archival LaTeX source (prepared for the release package).
-- `CHECKSUMS.md` — public SHA-256 integrity record for the prepared files.
+- `v8.0_reconstructed.tex` — reconstructed English archival LaTeX source.
+- `v8.0_zh.pdf` — Chinese archival translation.
+- `v8.0_zh.tex` — Chinese archival LaTeX source.
+- `CHECKSUMS.md` / `SHA256SUMS.txt` — public integrity records for the archival files.
 - `PRIORITY_AND_PROVENANCE.md` — archival provenance note.
-- `RELEASE_NOTES.md` — intended GitHub/Zenodo release description.
+- `RELEASE_NOTES.md` — GitHub/Zenodo release description.
 
 The Chinese translation and reconstructed source document the same historical theoretical version and do not constitute a new theoretical claim.
+
+## Citation policy
+
+Please cite this historical stage using the Zenodo DOI above. The surviving English PDF remains the authoritative historical artifact; the reconstructed English source and Chinese archival translation are preservation and accessibility aids associated with the same v8.0 release.
