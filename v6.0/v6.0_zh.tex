@@ -1,0 +1,125 @@
+\documentclass[a4paper,fleqn]{cas-sc}
+\usepackage[UTF8]{ctex}
+
+\usepackage[authoryear,longnamesfirst]{natbib}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,tabularx,longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage[section]{placeins}
+
+% XeLaTeX compatibility for the Elsevier CAS/STIX class: restore ASCII math glyph slots.
+\mathcode`\-="202D
+\mathcode`\*="202A
+
+\setlist[itemize]{leftmargin=2em,itemsep=0.25em,topsep=0.35em}
+\setlist[enumerate]{leftmargin=2.3em,itemsep=0.3em,topsep=0.35em}
+\emergencystretch=1em
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+\newtheorem{theorem}{定理}[section]
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{assumption}[theorem]{假设}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{注}
+
+\newcommand{\M}{\mathcal M}
+\newcommand{\Pth}{\mathcal P}
+\newcommand{\Led}{\mathsf{Led}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\TL}{T_L}
+\newcommand{\TR}{T_R}
+\newcommand{\AL}{A_L}
+\newcommand{\AR}{A_R}
+\newcommand{\Ker}{\operatorname{ker}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\adeg}{\operatorname{adeg}}
+\newcommand{\1}{\mathbf 1}
+\newcommand{\cone}{\operatorname{cone}}
+\newcommand{\spanr}{\operatorname{span}_{\R}}
+\newcommand{\codim}{\operatorname{codim}}
+\newcommand{\orcidurl}[1]{\href{https://orcid.org/#1}{#1}}
+\ExplSyntaxOn
+\RenewDocumentCommand \orcidauthor { m m }
+{
+  \seq_gput_right:Nn \g_stm_orcid_seq
+  {
+    { \ttfamily \orcidurl{#1} }
+    \parsename{#2}
+    \space(\eadauthor)
+  }
+}
+\ExplSyntaxOff
+
+\begin{document}
+\shorttitle{恢复路径历史}
+\shortauthors{Cheng}
+
+\title[mode=title]{恢复路径历史：精确通行压缩与可加选择}
+
+\author[1]{Yushang Cheng}[orcid={0009-0001-3218-6423}]
+\cormark[1]
+\ead{1302573502@qq.com}
+
+\affiliation[1]{organization={西南交通大学希望学院},
+                city={成都},
+                country={中国}}
+
+\cortext[1]{通讯作者}
+
+\begin{abstract}
+本文研究一维目标相对调整历史中，哪些特征能够在一种可加、对时间顺序进行粗粒化的评价中保留下来。通行账户记录所处一侧、运动方向、跨越的状态水平、重复次数以及目标达成。任何对弱时间变换不变且对拼接可加的赋值，都通过一个通用通行载体分解；该载体的精确纤维则可由实际历史之间的可行变换刻画。在一维情形下，有序端点与总跨越剖面共同即可重构完整的有向通行账户。
+
+平衡通行循环一致性（BPCC）在并非对加法封闭的路径域上给出一个精确的偏可加次序。成对消失基准一致性（PVBC）刻画了何时实际历史之间的比较能够由一族归一化的实数支撑赋值作精确的一致同意表示，同时无需把形式差分强行全序化。穿孔揭示次序闭性（PROC）进一步给出正则性条件：在该条件下，支撑族可表示为四个有向 Stieltjes 测度，而目标达成仍可保留一个边界原子。于是，每个正则赋值都可分离为端点进展、总通行调整和目标达成三个部分。
+
+这一套路径几何还支持可控的经济学变化。给定有限多个具有共同端点的可行计时遍历，只要共同时间跨度足够长，就能仅通过在端点加入停留来同时匹配持续时间以及某个能够区分两端点的连续流量统计量的累计值，而不必改变遍历速度，也不改变其通行账户。若两个方案对具有相同的通行账户差分，则序数排名可跨环境转移；有限个已观察的方案选择还能对未观察的通行对比给出锐界。唯一共同标量化属于另一个余维为一的识别特例。最后，即使菜单的备选项数量固定，完整可加一致性审计所需的重复系数仍可能无界。
+\end{abstract}
+
+\begin{keywords}
+调整历史 \sep 通行压缩 \sep 可加测量 \sep 有向通行 \sep 目标达成 \sep 方案选择
+\end{keywords}
+
+\begingroup\hfuzz=120pt\maketitle\endgroup
+\hypersetup{
+  hypertexnames=false,
+  pdftitle={恢复路径历史：精确通行压缩与可加选择},
+  pdfauthor={Yushang Cheng},
+  pdfsubject={目标相对调整历史上的精确通行压缩与可加选择},
+  pdfkeywords={调整历史, 通行压缩, 可加测量, 有向通行, 目标达成, 方案选择}
+}
+
+\noindent\textbf{JEL 分类：} C60; D11; D90; I12.
+
+
+% Main body is split for archival readability on GitHub.
+\input{zh/part01.tex}
+\input{zh/part02.tex}
+\input{zh/part03.tex}
+\input{zh/part04.tex}
+\input{zh/part05.tex}
+\input{zh/part06.tex}
+\input{zh/part07.tex}
+\input{zh/part08.tex}
+\input{zh/part09.tex}
+\input{zh/part10.tex}
+\input{zh/part11.tex}
+\input{zh/part12.tex}
+\input{zh/part13.tex}
+\input{zh/part14.tex}
+\input{zh/part15.tex}
+\input{zh/part16.tex}
+\input{zh/part17.tex}
+
+\end{document}
