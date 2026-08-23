@@ -21,8 +21,8 @@ LaTeX sources and figure files are recommended preservation assets, but they are
 |---|---:|---:|---:|---:|---|
 | v4.0 | Chinese PDF present and verified | English PDF present and verified | yes | matches uploaded PDFs | **released — DOI 10.5281/zenodo.22067123** |
 | v5.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067231** |
-| v6.0 | English PDF present | Chinese PDF present | yes | matches uploaded PDFs | **next release** |
-| v7.0 | English PDF present | Chinese PDF present | yes | matches uploaded PDFs | ready for final review |
+| v6.0 | English PDF present | Chinese PDF present | yes | matches deposited archive | **released — DOI 10.5281/zenodo.22067292** |
+| v7.0 | English PDF present | Chinese PDF present | yes | matches uploaded PDFs | **next release** |
 | v8.0 | surviving English PDF present | Chinese PDF present | yes; source-loss note explicit | standardized | ready for final review |
 | v9.0 | English endpoint PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | ready for final review |
 
@@ -47,6 +47,6 @@ These additions improve reproducibility but should not reopen the theoretical co
 
 Continue sequentially:
 
-`v6.0 → Zenodo DOI → update metadata → v7.0 → v8.0 → v9.0`
+`v7.0 → Zenodo DOI → update metadata → v8.0 → v9.0`
 
 Before each GitHub release, advance the root `.zenodo.json` to the next version's metadata. After Zenodo assigns a DOI and its deposited file set is verified, update the version README, root README, and `ARCHIVE_INDEX.md` before moving on.
