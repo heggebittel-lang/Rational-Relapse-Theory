@@ -5,8 +5,8 @@
 **Original submission label:** JME-D-26-00519  
 **Original source label:** `revealed_reinforcement_english_JME_v1_1`  
 **Language:** English + Chinese archival translation  
-**Planned release tag:** `v7.0`  
-**Zenodo DOI:** pending release
+**Release tag:** `v7.0`  
+**Zenodo DOI:** [10.5281/zenodo.22067412](https://doi.org/10.5281/zenodo.22067412)
 
 ## Manuscript identity
 
@@ -26,5 +26,9 @@ The Chinese manuscript is an archival translation of the same historical v7.0 ob
 - `SHA256SUMS.txt` — cryptographic checksums for release assets
 - `PRIORITY_AND_PROVENANCE.md` — provenance statement
 - `RELEASE_NOTES.md` — prepared bilingual release notes
+
+## Citation policy
+
+Please cite this historical stage using the Zenodo DOI above. The Chinese archival translation belongs to the same v7.0 release and is not a separate theoretical version.
 
 The original JME submission number is retained only for provenance and correspondence matching.
