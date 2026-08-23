@@ -3,9 +3,9 @@
 **Original internal label:** v6.2  
 **Original manuscript date:** 26 June 2026  
 **Original manuscript language:** Chinese  
-**Archive status:** Release-ready; authoritative Chinese PDF and English archival companion uploaded  
-**Planned release tag:** `v4.0`  
-**Zenodo DOI:** pending release
+**Archive status:** Released; authoritative Chinese PDF and English archival companion preserved  
+**Release tag:** `v4.0`  
+**Zenodo DOI:** [10.5281/zenodo.22067123](https://doi.org/10.5281/zenodo.22067123)
 
 ## Manuscript identity
 
@@ -24,6 +24,10 @@ This is the point at which the project moved beyond the earlier adjustment-frict
 
 The two uploaded PDFs were checked against the prepared archival copies before release. Their exact SHA-256 values are recorded in [`SHA256SUMS.txt`](./SHA256SUMS.txt).
 
+## Zenodo preservation note
+
+The first GitHub-triggered Zenodo archive initially captured the whole repository snapshot. The published Zenodo record was then corrected so that its deposited archive contains the **v4.0 folder only**. The DOI above therefore identifies this historical stage rather than the complete v1.0–v9.0 repository.
+
 ## Optional preservation assets
 
 The following files may still be added later for reproducibility, but they are not required for the DOI sequence:
@@ -35,8 +39,8 @@ The following files may still be added later for reproducibility, but they are n
 
 These source and figure files are archival assets only and are not a reason to reopen or revise the historical theory.
 
-## Release and citation policy
+## Citation policy
 
-The intended release tag is `v4.0`. Once the GitHub Release is synchronized to Zenodo, the resulting DOI should be added here, to the repository root README, and to `ARCHIVE_INDEX.md`. The English companion belongs to the same historical stage and is not a separate theoretical version.
+Please cite this version using its Zenodo DOI. The English companion belongs to the same historical stage and is not a separate theoretical version.
 
 Earlier and later archive versions should be cited separately using their own release records and DOIs.
