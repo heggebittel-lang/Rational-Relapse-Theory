@@ -1,0 +1,95 @@
+\section{术语、记号与适用范围约定}\label{app:notation}
+
+本附录是一份读者地图，而不是所有证明局部符号的清单。表~\ref{tab:dependency} 记录表示理论的逻辑主干；表~\ref{tab:notation} 汇集在多个正文小节中反复使用的术语。只在单个证明中出现的符号，则在其出现位置定义。
+
+\begin{table}[ht]
+\centering
+\small
+\renewcommand{\arraystretch}{1.16}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.39\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+条件或继承结果 & 在表示链中的作用\\
+\midrule
+有限步路径域；弱时间变换不变性；拼接可加性 & 所有允许的群值通行赋值都必须通过的通用载体（定理~\ref{thm:universal}）。\\
+一维带标签路径几何 & 载体的精确可行纤维（定理~\ref{thm:fiber}）。\\
+有限步一维域中的有序端点 $+$ 总通行 & 完整有向账本的无损重构（命题~\ref{prop:gross-endpoints}）。\\
+弱序 $+$ BPCC & 实际历史上的精确典范偏可加次序（命题~\ref{prop:envelope}）。\\
+$+$ 面向目标的方向单调性 $+$ PVBC & 由归一化实数支撑赋值的一致同意作精确表示，同时无需将形式差分全序化（定理~\ref{thm:A}）。\\
+$+$ 区间丰富性 $+$ PROC & 正则支撑赋值足以表示实际次序；每个赋值诱导四个有向 Stieltjes 测度以及各侧目标原子（定理~\ref{thm:B}）。\\
+$+$ $\codim J_{\mathrm{reg}}=1$ & 一个归一化共同标量化的点识别（推论~\ref{cor:common-scale}）。\\
+定理~\ref{thm:B} $+$ 净通行守恒 & 每个支撑赋值的端点--总通行--达成分解（定理~\ref{thm:C}）。\\
+共同端点 $+$ 固定可行遍历 $+$ 允许在初始/终止端点停留 $+$ 一个区分端点的连续流量统计量 & 在足够长的共同时间跨度上，不改变遍历速度即可匹配持续时间与流量（命题~\ref{prop:matched-design}）。\\
+BPCC $+$ 相同的实际通行账户差分 & 无需选定赋值即可转移方案的弱/严格/无差异序数排名（定理~\ref{thm:D}）。\\
+有限经验网格 $+$ 已观察弱方案选择 & 反事实价值锐界与稳健的样本外方案预测（定理~\ref{thm:finite-bounds}）。\\
+有限方案--价格设计 $+$ 拟线性计价物 & 通行对比的货币校准锐界（推论~\ref{cor:wtp}）。\\
+\bottomrule
+\end{tabularx}
+\caption{主要表示结果及其核心含义之间的依赖关系图。}
+\label{tab:dependency}
+\end{table}
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.16}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.6em}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.46\textwidth}@{}}
+\caption{核心术语、记号与适用范围约定}\label{tab:notation}\\
+\toprule
+类别 & 术语或符号 & 含义及维持的约定\\
+\midrule
+\endfirsthead
+\multicolumn{3}{l}{\small\itshape 表~\thetable（续）}\\
+\toprule
+类别 & 术语或符号 & 含义及维持的约定\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\small\itshape 下页续}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{@{}l}{\textit{经济对象与路径域}}\\*
+条件通行偏好 & $\succeq$；$\{U_\Lambda\}_{\Lambda\in\mathfrak M_{\mathrm{reg}}}$ & 在非通行后果保持固定的条件下，个体对目标相对通行账户的主观排序；该排序由正则支撑赋值的一致同意恢复。\\
+支撑赋值 & $U_\Lambda$ & 一个与原始次序相容的归一化可加泛函。除非正则族为单点集，单个 $U_\Lambda$ 不必保持每个原始严格比较，因此不能单独视为效用表示。\\
+受控方案菜单 & --- & 被比较的一对方案中非通行后果相同的菜单，因此观察到的完整选择直接揭示条件通行次序。\\
+比较路径域 & $\Pth$ & 用于表示的丰富有限步定义域；具体经验方案菜单可以只是其一个小子集。\\
+目标相对状态 & $x_t$，目标 $0$ & 相对于预先给定目标测量的一维状态；在吸烟应用中为 $x_t=A_t-A_t^*$ 或保持次序的归一化。\\
+侧与方向 & $s\in\{L,R\}$；$T,A$ & $L/R$ 表示目标以下/以上两侧；趋向目标 减少目标距离，远离目标 增加目标距离。这些都是几何标签。\\
+目标达成 & $A_s(\gamma)$ & 从侧 $s$ 通过进入目标的趋向目标 通行到达 $0$。维持的原子按每次达成计值。\\
+目标界面 & --- & 进入目标的趋向目标 单元包含 $0$，离开目标的远离目标 单元排除 $0$；一次连续跨越产生两个有向片段和一次达成。\\
+有限步路径 & $\gamma:[0,1]\to X$ & 在有限多个单元上单调的连续路径；允许常值单元。\\
+弱时间变换 & --- & $[0,1]$ 上连续非减满射；允许改变速度和加入停留，但保持访问状态的顺序。\\
+
+\multicolumn{3}{@{}l}{\textit{通行账户与典范次序}}\\*
+抽象通行账户 & $q(\gamma)\in\mathfrak L$ & 由模块--区间生成元在细分关系下取商所得的通用可加载体。\\
+具体账本 & $\ell(\gamma)=(h^m_\gamma)_{m\in\M}$ & 记录所处一侧、方向、跨越水平、重复次数和目标达成的阶梯函数表示。定理~\ref{thm:universal} 将其与 $q(\gamma)$ 识别。\\
+通行等价 & $\gamma\approx_p\eta$ & 可通过定理~\ref{thm:fiber} 中保持账户的操作相连的历史；等价地，$q(\gamma)=q(\eta)$。\\
+BPCC & 平衡通行循环一致性 & 排除有限个弱改进（至少一个严格）组成、且总通行账户恰好平衡的列表。\\
+典范包络 & $G_{\succeq}$，$J_{\succeq}$ & 由揭示账户差分生成的偏序商群及其典范路径映射。\\
+PVBC & 成对消失基准一致性 & 要求阿基米德完备化保持实际历史比较；它排除实际的无穷小严格差分，同时不把形式差分全序化。\\
+归一化支撑赋值 & $\mathcal S$ & 阿基米德化序单位空间上的正线性泛函，并在一个全支撑基准上归一化。在定理~\ref{thm:A} 下，它们的一致同意表示实际次序。\\
+
+\multicolumn{3}{@{}l}{\textit{连续性与有向测度}}\\*
+穿孔拓扑 & $\tau^\circ$ & 使收缩到空集的典范非目标通行收敛到零的最细局部凸拓扑；到达目标的序列被排除在外。\\
+PROC & 穿孔揭示次序闭性 & 要求揭示锥的穿孔拓扑闭包不改变实际历史比较。\\
+正则支撑赋值 & $\mathcal S_{\mathrm{reg}}$ & $\tau^\circ$ 连续的归一化支撑赋值；等价地，其价值在每个可容许穿孔收缩序列上趋于零。\\
+有向测度 & $\lambda_{T_s}^{\Lambda},\lambda_{A_s}^{\Lambda}$ & 正则支撑赋值 $\Lambda$ 诱导的有限非负 Borel 测度；远离目标 的目标质量归一化为零。\\
+穿孔测度 & $\lambda_{T_s}^{\Lambda,\circ},\lambda_{A_s}^{\Lambda,\circ}$ & 正则支撑赋值的有向测度在正目标距离 $(0,R_s]$ 上的限制。\\
+达成系数与原子 & $\alpha_s^\Lambda$；$\alpha_s^\Lambda\delta_0$ & 支撑赋值特定的边界残差及其单点测度形式；可以为零，也不必在不同赋值之间相同。\\
+\multicolumn{3}{@{}l}{\textit{有限数据方案选择}}\\*
+方案--价格补全 & $v_p(\gamma,m)=p(q(\gamma))-m$ & 用于在有限网格上把通行价值校准到货币单位的应用特定拟线性扩展。\\
+支付意愿区间 & $[\underline w(d),\overline w(d)]$ & 在与已观察方案--价格选择一致、面向目标的可加补全中，一个反事实方案差分所对应货币价值的锐集合。\\
+
+\multicolumn{3}{@{}l}{\textit{分解与识别}}\\*
+净通行 & $D_s^\gamma=N_s^T-N_s^A$ & 由有序端点决定的方向不平衡。\\
+总通行 & $V_s^\gamma=N_s^T+N_s^A$ & 趋向目标 加 远离目标 的重复次数，进入反转偶对称调整与信息结果。\\
+势测度与势 & $\mu_s$；$P$ & $\mu_s=(\lambda_{T_s}^{\circ}+\lambda_{A_s}^{\circ})/2$ 生成端点进展，且 $P(0)=0$。\\
+总通行调整 & $\kappa_s$；$\int V_s^\gamma\,\dd\kappa_s$ & 有符号、反转偶对称分量，其中 $\kappa_s=(\lambda_{T_s}^{\circ}-\lambda_{A_s}^{\circ})/2$。\\
+循环通行价值 & $2\kappa_s(E)$ & 闭合目标外往返通过 $E$ 时，在端点项抵消后的总通行调整。\\
+目标返回循环 & $C_{\varepsilon,s}$ & 从目标出发到半径 $\varepsilon$ 再从侧 $s$ 返回；其价值收敛到 $\alpha_s$。\\
+仅端点子类 & --- & 等价于 $\kappa_L=\kappa_R=0$ 且 $\alpha_L=\alpha_R=0$；左右势测度仍可以不同。\\
+
+\end{longtable}
+\endgroup
