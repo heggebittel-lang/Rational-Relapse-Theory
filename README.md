@@ -29,15 +29,15 @@ For a compact bilingual navigation table, see **[ARCHIVE_INDEX.md](./ARCHIVE_IND
 | [v6.0](./v6.0/) | _Recovery Histories: Exact Passage Compression and Additive Choice_ | JET_Recovery_Histories_v25 | English + Chinese | [10.5281/zenodo.22067292](https://doi.org/10.5281/zenodo.22067292) |
 | [v7.0](./v7.0/) | _Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation_ | JME-D-26-00519 | English + Chinese | [10.5281/zenodo.22067412](https://doi.org/10.5281/zenodo.22067412) |
 | [v8.0](./v8.0/) | _Compensated Choice and Recursive Counterfactual Identification_ | recursive_monetary_comparison_core_theory_v9_1 | English + Chinese (source reconstructed from surviving PDF) | [10.5281/zenodo.22067461](https://doi.org/10.5281/zenodo.22067461) |
-| [v9.0](./v9.0/) | _Compensated Current Choice and Counterfactual Identification_ | Compensated_Current_Choice_v38_Economic_Grounding | English + Chinese | DOI pending release |
+| [v9.0](./v9.0/) | _Compensated Current Choice and Counterfactual Identification_ | Compensated_Current_Choice_v38_Economic_Grounding | English + Chinese | [10.5281/zenodo.22067526](https://doi.org/10.5281/zenodo.22067526) |
 
 The archive version numbers **v4.0–v9.0 are chronological repository labels**. They are deliberately simpler than the internal manuscript filenames and submission numbers, which remain documented in each version folder.
 
 ## How to cite
 
-Please cite the **specific released version** you use rather than this repository generically. Versions v1.0–v8.0 now have Zenodo DOIs. Version v9.0 will receive its own version-specific DOI record as the release sequence is completed.
+Please cite the **specific released version** you use rather than this repository generically. Versions v1.0–v9.0 all have version-specific Zenodo DOIs. The current endpoint, v9.0, is archived at [10.5281/zenodo.22067526](https://doi.org/10.5281/zenodo.22067526).
 
-GitHub citation metadata is provided in [`CITATION.cff`](./CITATION.cff). It points to the current endpoint for repository-level citation, but the version-specific Zenodo DOI remains the preferred citation for a particular manuscript stage.
+GitHub citation metadata is provided in [`CITATION.cff`](./CITATION.cff). Its preferred citation points to v9.0, while the version table above remains the authoritative navigation map for the historical sequence.
 
 The historical folder name or internal manuscript number is not intended to replace a release citation.
 
@@ -47,13 +47,13 @@ The project began from a simple question: can a rational-addiction model contain
 
 Successive versions then asked increasingly demanding questions about functional form, additive representation, double counting, path/history compression, compensated measurement, and identification. Literature auditing eventually showed that much of the mathematical machinery belongs to established revealed-preference, additive-measurement, graph, finite-difference, and dynamic-systems theory. The final stage therefore narrows the claim: the potentially substantive object is the **information structure and comparison support** required for counterfactual identification, not the standard tools used to analyze it.
 
-See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [RELEASE_GUIDE.md](./RELEASE_GUIDE.md) for the release workflow, [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the current checklist, and [ZENODO_RELEASE_METADATA.md](./ZENODO_RELEASE_METADATA.md) for the v4.0–v9.0 metadata sequence.
+See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [RELEASE_GUIDE.md](./RELEASE_GUIDE.md) for the release workflow, [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the completed release record, and [ZENODO_RELEASE_METADATA.md](./ZENODO_RELEASE_METADATA.md) for the v4.0–v9.0 metadata sequence.
 
 ## Preservation policy
 
 - Earlier manuscripts are **not deleted or silently rewritten**.
-- Each archive version receives its own folder and, once ready, its own GitHub Release.
-- Each historical stage should receive a **version-specific Zenodo record** rather than relying on a whole-repository archive as the primary citation object.
+- Each archive version receives its own folder and its own GitHub Release / Zenodo citation record.
+- Each historical stage has a **version-specific Zenodo record** rather than relying on a whole-repository archive as the primary citation object.
 - A translation or correction that materially changes a released manuscript should normally be issued as a new release/version rather than silently replacing the archived object.
 - The repository's historical versions document provenance; they should not be read as simultaneous current claims.
 
