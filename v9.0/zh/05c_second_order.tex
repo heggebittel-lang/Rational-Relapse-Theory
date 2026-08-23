@@ -1,0 +1,415 @@
+\subsection{不恢复水平值的二阶导数识别}
+\label{sec:derivatives-without-levels}
+
+比较图是观测复合方案在当前层的投影。令 $\mathcal A_n$ 表示设计 $n$ 中观测到的复合方案集合，并把典型元素写成 $(\xi,y)$，省略货币。每条观测比较边 $e$ 具有形式
+\[
+(\xi_{s(e)},y_e^-)
+\quad\text{对比}\quad
+(\xi_{t(e)},y_e^+),
+\]
+因此其当前关联为
+\[
+d_e=\mathbf e_{t(e)}-\mathbf e_{s(e)},
+\]
+延续对比为
+\[
+q_e=[y_e^+]-[y_e^-].
+\]
+
+\begin{proposition}[延续像空间的维数]
+\label{prop:support-rank}
+令 $D$ 与 $Q$ 分别为任意有限观测复合菜单支持的当前关联矩阵与延续关联矩阵，并定义
+\[
+\mathcal T:=Q(\ker D).
+\]
+则
+\begin{equation}
+\boxed{
+\dim \mathcal T
+=
+\operatorname{rank}
+\begin{pmatrix}
+D\\ Q
+\end{pmatrix}
+-
+\operatorname{rank}D.}
+\label{eq:support-rank}
+\end{equation}
+因此，消去当前部分之后，观测支持携带非零延续信息，当且仅当
+\[
+\operatorname{rank}
+\begin{pmatrix}
+D\\ Q
+\end{pmatrix}
+>
+\operatorname{rank}D.
+\]
+
+对第~\ref{sec:shrinking} 节中的局部 $A$--$B$ 对比，令
+\[
+M_n:=
+\begin{pmatrix}
+D_n\\ S_nQ_n
+\end{pmatrix}.
+\]
+则
+\begin{equation}
+\boxed{
+\dim\Lambda_n
+=
+\operatorname{rank}
+\begin{pmatrix}
+M_n\\ T_nQ_n
+\end{pmatrix}
+-
+\operatorname{rank}M_n.}
+\label{eq:gap-support-rank}
+\end{equation}
+因此，比较支持给出非零 $A$--$B$ 对比，恰好等价于：在已消除当前关联和共同延续关联之后，加入对比关联 $T_nQ_n$ 会提高秩。
+\end{proposition}
+
+\begin{proof}
+$Q$ 在 $\ker D$ 上的限制，其核为 $\ker D\cap\ker Q$。秩--零化度定理给出
+\[
+\dim Q(\ker D)
+=
+\dim\ker D-
+\dim(\ker D\cap\ker Q).
+\]
+由于
+\[
+\ker D\cap\ker Q
+=
+\ker
+\begin{pmatrix}
+D\\ Q
+\end{pmatrix},
+\]
+式~\eqref{eq:support-rank} 成立。对 $T_nQ_n$ 在 $\ker M_n$ 上的限制应用同样论证，即得式~\eqref{eq:gap-support-rank}。
+\end{proof}
+
+\begin{theorem}[新增一条比较带来的秩增量]
+\label{thm:marginal-edge}
+令
+\[
+\nu(D,Q)
+:=
+\operatorname{rank}
+\begin{pmatrix}
+D\\Q
+\end{pmatrix}
+-
+\operatorname{rank}D
+=
+\dim Q(\ker D).
+\]
+新增一条观测比较，其当前关联列为 $d$，延续关联列为 $q$。若这条比较引入新的当前节点或延续标签，则通过补零把旧矩阵嵌入扩大的坐标空间。记
+\[
+D^+=(D\ d),
+\qquad
+Q^+=(Q\ q).
+\]
+则
+\begin{equation}
+\boxed{
+\nu(D^+,Q^+)-\nu(D,Q)\in\{0,1\}.}
+\label{eq:marginal-info-01}
+\end{equation}
+该增量等于一，当且仅当
+\begin{equation}
+\boxed{
+d\in\operatorname{col}D
+\quad\text{且}\quad
+\begin{pmatrix}d\\q\end{pmatrix}
+\notin
+\operatorname{col}
+\begin{pmatrix}D\\Q\end{pmatrix}.}
+\label{eq:marginal-info-condition}
+\end{equation}
+因此，一条比较恰好在“当前关联冗余、但当前--延续联合关联不冗余”时增加延续信息。
+
+对局部 $A$--$B$ 对比空间，令
+\[
+m=
+\begin{pmatrix}d\\Sq\end{pmatrix},
+\qquad
+g=Tq,
+\]
+其中 $S$ 与 $T$ 是第~\ref{sec:shrinking} 节中使用的共同关联映射与对比关联映射。令
+\[
+M^+=(M\ m),
+\qquad
+G^+=(TQ\ g),
+\]
+则对比维数 $\dim\Lambda$ 也恰好在下列条件下增加一：
+\begin{equation}
+m\in\operatorname{col}M
+\quad\text{且}\quad
+\begin{pmatrix}m\\g\end{pmatrix}
+\notin
+\operatorname{col}
+\begin{pmatrix}M\\TQ\end{pmatrix}.
+\label{eq:marginal-gap-condition}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+令
+\[
+A=
+\begin{pmatrix}D\\Q\end{pmatrix},
+\qquad
+a=
+\begin{pmatrix}d\\q\end{pmatrix}.
+\]
+新增一列会使 $\operatorname{rank}A$ 和 $\operatorname{rank}D$ 分别增加零或一。若 $d\notin\operatorname{col}D$，则 $a\notin\operatorname{col}A$，所以两个秩都增加一，其差不变。若 $d\in\operatorname{col}D$，则 $D$ 的秩不变，而 $A$ 的秩当且仅当 $a\notin\operatorname{col}A$ 时增加一。这就证明了式~\eqref{eq:marginal-info-01}--\eqref{eq:marginal-info-condition}。$A$--$B$ 的结论是把同一论证应用于 $(M,TQ)$。
+\end{proof}
+
+\begin{corollary}[比较数量的下界]
+\label{cor:comparison-lower-bound}
+若一个有限比较支持的当前投影有 $V$ 个当前节点、$E$ 条观测比较和 $c$ 个连通分量，则
+\begin{equation}
+\boxed{
+\dim Q(\ker D)\le E-V+c.}
+\label{eq:cycle-dimension-bound}
+\end{equation}
+因此，若某个支持在消去当前部分后携带 $k$ 个线性独立的延续方向，则必有
+\begin{equation}
+\boxed{
+E\ge V-c+k.}
+\label{eq:comparison-lower-bound}
+\end{equation}
+若当前图连通，则 $E\ge V-1+k$。
+\end{corollary}
+
+\begin{proof}
+对节点--边关联矩阵，
+\[
+\operatorname{rank}D=V-c.
+\]
+因此
+\[
+\dim\ker D=E-V+c.
+\]
+由于 $Q(\ker D)$ 是 $\ker D$ 的像，其维数不可能超过式~\eqref{eq:cycle-dimension-bound}。整理即可得到式~\eqref{eq:comparison-lower-bound}。
+\end{proof}
+
+\begin{corollary}[单值延续支持]
+\label{prop:single-valued-support}
+假设在观测复合方案上，延续后果是当前节点的函数：存在映射 $\rho$，使得每个观测方案都具有形式 $(\xi,\rho(\xi))$。则
+\[
+Qr=0
+\qquad
+\text{对每个满足 }Dr=0\text{ 的 }r.
+\]
+因此，当前循环不能携带任何非零延续对比。
+\end{corollary}
+
+\begin{proof}
+令 $R$ 把当前节点 $\xi$ 的基向量映射到延续标签 $\rho(\xi)$ 的基向量。对每条观测边，
+\[
+q_e=R(\mathbf e_{t(e)}-\mathbf e_{s(e)})=Rd_e.
+\]
+于是 $Q=RD$，而 $Dr=0$ 蕴含 $Qr=0$。
+\end{proof}
+
+因此，非零延续像要求命题~\ref{prop:support-rank} 中的秩确实增加。特别地，在相关观测支持上，延续后果不能是当前节点的单值函数。在贯穿全文的保险例子中，所需的非单点纤维只是：同一个当前合同后果允许出现不止一个续保条款。若未来后果由当前后果在技术上唯一决定，则该像为零。
+
+令
+\[
+\gamma(z):=[\Gamma_A(z)]-[\Gamma_B(z)],
+\qquad
+\gamma(z)^{\mathsf T}v=H(z).
+\]
+为识别混合导数，设
+\[
+z_{00,n}=(x_0,a_0),\quad
+z_{10,n}=(x_0+h_n,a_0),\quad
+z_{01,n}=(x_0,a_0+k_n),\quad
+z_{11,n}=(x_0+h_n,a_0+k_n),
+\]
+其中 $h_n,k_n\to0$ 且 $h_nk_n\ne0$。
+
+选择四个当前后果
+\[
+\xi^R_{1n},\xi^R_{2n},\xi^R_{3n},\xi^R_{4n}
+\]
+并观察如下四个从左到右定向的补偿菜单：
+\begin{align}
+(\xi^R_{1n},\Gamma_B(z_{00,n}))
+&\longrightarrow
+(\xi^R_{2n},\Gamma_A(z_{00,n})),
+\label{eq:primitive-rect-1}\\
+(\xi^R_{2n},\Gamma_A(z_{10,n}))
+&\longrightarrow
+(\xi^R_{3n},\Gamma_B(z_{10,n})),
+\label{eq:primitive-rect-2}\\
+(\xi^R_{3n},\Gamma_B(z_{11,n}))
+&\longrightarrow
+(\xi^R_{4n},\Gamma_A(z_{11,n})),
+\label{eq:primitive-rect-3}\\
+(\xi^R_{4n},\Gamma_A(z_{01,n}))
+&\longrightarrow
+(\xi^R_{1n},\Gamma_B(z_{01,n})).
+\label{eq:primitive-rect-4}
+\end{align}
+其延续对比分别为
+\[
++\gamma(z_{00,n}),\quad
+-\gamma(z_{10,n}),\quad
++\gamma(z_{11,n}),\quad
+-\gamma(z_{01,n}).
+\]
+
+对行动方向的二阶导数，令
+\[
+z_{+,n}=(x_0+h_n,a_0),\qquad
+z_{0}=(x_0,a_0),\qquad
+z_{-,n}=(x_0-h_n,a_0),
+\]
+再选择四个当前后果
+\[
+\xi^X_{1n},\xi^X_{2n},\xi^X_{3n},\xi^X_{4n},
+\]
+并观察
+\begin{align}
+(\xi^X_{1n},\Gamma_B(z_{+,n}))
+&\longrightarrow
+(\xi^X_{2n},\Gamma_A(z_{+,n})),
+\label{eq:primitive-curv-1}\\
+(\xi^X_{2n},\Gamma_A(z_{0}))
+&\longrightarrow
+(\xi^X_{3n},\Gamma_B(z_{0})),
+\label{eq:primitive-curv-2}\\
+(\xi^X_{3n},\Gamma_A(z_{0}))
+&\longrightarrow
+(\xi^X_{4n},\Gamma_B(z_{0})),
+\label{eq:primitive-curv-3}\\
+(\xi^X_{4n},\Gamma_B(z_{-,n}))
+&\longrightarrow
+(\xi^X_{1n},\Gamma_A(z_{-,n})).
+\label{eq:primitive-curv-4}
+\end{align}
+其延续对比分别为
+\[
++\gamma(z_{+,n}),\quad
+-\gamma(z_0),\quad
+-\gamma(z_0),\quad
++\gamma(z_{-,n}).
+\]
+
+\begin{theorem}[双区块设计中的二阶识别]
+\label{thm:derivatives-without-levels}
+假设对每个 $n$，八个菜单
+\eqref{eq:primitive-rect-1}--\eqref{eq:primitive-curv-4}
+都被观察到；各设计中这些区块所使用的当前节点集合彼此不相交，并且没有其他观测比较使用这些当前节点。假设消去条件成立，并令 $H$ 在 $z_0$ 附近属于 $C^2$。
+
+令 $b_n^R$ 与 $b_n^X$ 分别表示沿两个当前循环加总四个调整后精确转移所得的和。则
+\begin{align}
+b_n^R
+&=
+H(z_{00,n})-H(z_{10,n})-H(z_{01,n})+H(z_{11,n}),
+\label{eq:rectangle-cycle-residual}\\
+b_n^X
+&=
+H(z_{+,n})-2H(z_0)+H(z_{-,n}),
+\label{eq:curvature-cycle-residual}
+\end{align}
+并且
+\begin{equation}
+\boxed{
+\frac{b_n^R}{h_nk_n}\longrightarrow H_{xa}(z_0),
+\qquad
+\frac{b_n^X}{h_n^2}\longrightarrow H_{xx}(z_0).}
+\label{eq:derivatives-without-levels-limit}
+\end{equation}
+
+任一抽样点上的水平值 $H(z)$ 都未被点识别。在约化式 $C^2$ 函数类上，观测为零的二阶 jet 恰好为
+\begin{equation}
+\boxed{
+\left\{
+(\theta_0,\theta_x,\theta_a,0,0,\theta_{aa})^{\mathsf T}
+\right\}.}
+\label{eq:block-null-jets}
+\end{equation}
+因此，一个局部二阶 jet 泛函得到点识别，当且仅当它是 $H_{xx}(z_0)$ 与 $H_{xa}(z_0)$ 的线性组合。
+\end{theorem}
+
+\begin{proof}
+每组四个菜单的当前关联构成一个简单有向循环。把四条转移方程相加，会消去每一个当前节点价值。式~\eqref{eq:primitive-rect-1}--\eqref{eq:primitive-rect-4} 中的延续对比加总为式~\eqref{eq:rectangle-cycle-residual}；式~\eqref{eq:primitive-curv-1}--\eqref{eq:primitive-curv-4} 中的延续对比加总为式~\eqref{eq:curvature-cycle-residual}。式~\eqref{eq:derivatives-without-levels-limit} 中的极限就是通常的混合矩形差分与中心二阶差分。
+
+令
+\[
+q(x,a)=\alpha+\beta(x-x_0)+\psi(a),
+\]
+其中 $\alpha,\beta\in\mathbb R$ 且 $\psi\in C^2$。它的矩形差分与关于 $x$ 的中心二阶差分都为零。因此，把 $H$ 替换成 $H+q$ 并不会改变任何观测当前循环上的延续和。由于每个当前区块都是简单循环，且不同区块使用互不相交的当前节点，可以沿前三条边依次调整当前节点价值；第四条边之所以也成立，恰好是因为 $q$ 的循环和为零。因此 $H$ 与 $H+q$ 能够复现每一个原始转移观测。特别地，没有任何抽样水平 $H(z)$ 得到点识别。
+
+反过来，每个观测为零的扰动对每个 $n$ 都有标准化矩形残差与曲率残差为零，因此
+\[
+q_{xa}(z_0)=q_{xx}(z_0)=0.
+\]
+任意这两个分量为零的二阶 jet，都可以由
+\[
+q(x,a)
+=
+\alpha+\beta(x-x_0)+\gamma(a-a_0)
++\frac{\delta}{2}(a-a_0)^2
+\]
+实现，而根据前述论证，这样的 $q$ 在观测上为零。这就证明了式~\eqref{eq:block-null-jets}。两个有限差分极限识别 $xx$ 与 $xa$ 方向，而零扰动则表明不存在其他被识别的二阶 jet 方向。
+\end{proof}
+
+\begin{corollary}[双区块设计中的边最小性]
+\label{cor:two-block-edge-minimal}
+若四个矩形菜单位置中的任意一个在所有设计中都缺失，则无法由剩余双区块数据点识别 $H_{xa}(z_0)$。若四个曲率菜单位置中的任意一个在所有设计中都缺失，则无法点识别 $H_{xx}(z_0)$。
+\end{corollary}
+
+\begin{proof}
+从每个矩形区块删除任意一个菜单后，其四个当前节点之间只剩一棵树，因此该区块不存在非零循环。剩余曲率区块无法识别 $H_{xa}$：扰动
+\[
+q(x,a)=(x-x_0)(a-a_0)
+\]
+的曲率残差为零，却改变 $q_{xa}(z_0)$。由于不完整的矩形区块是树，可以通过调整当前节点价值保持其边方程不变，因此 $H_{xa}(z_0)$ 未识别。类似地，若从每个曲率区块删除一个菜单，矩形区块看不到
+\[
+q(x,a)=(x-x_0)^2,
+\]
+而不完整曲率区块又都是树，因此 $H_{xx}(z_0)$ 未识别。
+\end{proof}
+
+每一个导数都由一个四边当前循环承载，而延续水平值本身仍不受限制。
+
+\begin{proposition}[额外比较]
+\label{prop:additional-comparisons}
+假设一个扩展的局部比较支持包含定理~\ref{thm:derivatives-without-levels} 中的两个四边区块。令 $\widetilde\Lambda_n$ 表示扩展设计中所有观测当前循环所生成的 $A$--$B$ 对比空间。假设每个 $\lambda\in\widetilde\Lambda_n$ 都满足
+\begin{align}
+\sum_{i:a_{in}=\bar a}\lambda_i&=0
+\quad\text{对每个抽样状态 }\bar a,
+\label{eq:additional-state-balance}\\
+\sum_i\lambda_i(x_{in}-x_0)&=0.
+\label{eq:additional-x-balance}
+\end{align}
+则在约化式 $C^2$ 函数类上，被识别的二阶 jet 泛函仍然恰好是
+\begin{equation}
+\boxed{\operatorname{span}\{\partial_{xx},\partial_{xa}\}.}
+\label{eq:robust-identified-space}
+\end{equation}
+特别地，与响应有关的两个导数仍得到点识别，而没有任何水平值 $H(z)$ 得到点识别。额外比较可以与原区块共享当前节点。
+\end{proposition}
+
+\begin{proof}
+原来的两个区块仍被观测，因此每个观测等价扰动都满足
+\[
+q_{xx}(z_0)=q_{xa}(z_0)=0.
+\]
+反过来，对
+\[
+q(x,a)=\alpha+\beta(x-x_0)+\psi(a),
+\qquad \psi\in C^2,
+\]
+条件~\eqref{eq:additional-state-balance}--\eqref{eq:additional-x-balance} 给出
+\[
+\sum_i\lambda_iq(z_{in})=0
+\qquad
+\forall\lambda\in\widetilde\Lambda_n.
+\]
+所以这些扰动在扩展循环系统中仍然观测为零。其二阶 jet 恰好穷尽所有 $xx$ 与 $xa$ 分量为零的向量。结合原有矩形差分和中心二阶差分，就得到式~\eqref{eq:robust-identified-space}。常数扰动则表明不存在被识别的点水平值。
+\end{proof}
