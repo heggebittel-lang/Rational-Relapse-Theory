@@ -19,20 +19,18 @@ LaTeX sources and figure files are recommended preservation assets, but they are
 
 | Version | Authoritative PDF | Companion PDF | Provenance | Checksums | Status |
 |---|---:|---:|---:|---:|---|
-| v4.0 | **missing from repository** (original Chinese PDF) | English PDF present | yes | yes | **one blocking file remains** |
+| v4.0 | Chinese PDF present and verified | English PDF present and verified | yes | matches uploaded PDFs | **ready for release** |
 | v5.0 | English PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | ready for final review |
 | v6.0 | English PDF present | Chinese PDF present | yes | matches uploaded PDFs | ready for final review |
 | v7.0 | English PDF present | Chinese PDF present | yes | matches uploaded PDFs | ready for final review |
 | v8.0 | surviving English PDF present | Chinese PDF present | yes; source-loss note explicit | standardized | ready for final review |
 | v9.0 | English endpoint PDF present | Chinese PDF present | yes | corrected to uploaded PDFs | ready for final review |
 
-## v4.0 blocking item
+## v4.0 verification
 
-Before creating the `v4.0` GitHub Release, add the original Chinese historical manuscript as:
+The authoritative Chinese PDF and English archival companion are both present in `v4.0/`. Their Git blob identities match the prepared archival copies, and their SHA-256 values are recorded in `v4.0/SHA256SUMS.txt`.
 
-`v4.0/v4.0.pdf`
-
-Its prepared SHA-256 is recorded in `v4.0/SHA256SUMS.txt`. The English companion `v4.0_en.pdf` is already present.
+The root `.zenodo.json` is currently set to v4.0 metadata. The next action is therefore to create the `v4.0` GitHub Release and allow the connected Zenodo integration to archive it.
 
 ## Recommended, non-blocking source preservation
 
@@ -49,7 +47,7 @@ These additions improve reproducibility but should not reopen the theoretical co
 
 ## Release sequence
 
-Once v4.0 has its original Chinese PDF, proceed sequentially:
+Proceed sequentially:
 
 `v4.0 → Zenodo DOI → update metadata → v5.0 → ... → v9.0`
 

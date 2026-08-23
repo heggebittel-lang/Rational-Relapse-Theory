@@ -24,7 +24,7 @@ For a compact bilingual navigation table, see **[ARCHIVE_INDEX.md](./ARCHIVE_IND
 | [v1.0](./v1.0/) | Initial rational-relapse sketch | v1.0 | English | [10.5281/zenodo.19743247](https://doi.org/10.5281/zenodo.19743247) |
 | [v2.0](./v2.0/) | First complete structural model | v2.x | Chinese | [10.5281/zenodo.20086392](https://doi.org/10.5281/zenodo.20086392) |
 | [v3.0](./v3.0/) | Function-family / adjustment-friction formulation | v3.0 | English + Chinese | [10.5281/zenodo.20632874](https://doi.org/10.5281/zenodo.20632874) |
-| [v4.0](./v4.0/) | Axiomatic endogenous-recovery structural model | v6.2 | Chinese + English reader | DOI pending release |
+| [v4.0](./v4.0/) | Axiomatic endogenous-recovery structural model | v6.2 | Chinese + English companion | DOI pending release |
 | [v5.0](./v5.0/) | _Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction_ | JME-S-26-00480 | English + Chinese | DOI pending release |
 | [v6.0](./v6.0/) | _Recovery Histories: Exact Passage Compression and Additive Choice_ | JET_Recovery_Histories_v25 | English + Chinese | DOI pending release |
 | [v7.0](./v7.0/) | _Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation_ | JME-D-26-00519 | English + Chinese | DOI pending release |

@@ -3,7 +3,7 @@
 **Original internal label:** v6.2  
 **Original manuscript date:** 26 June 2026  
 **Original manuscript language:** Chinese  
-**Archive status:** English companion PDF uploaded; original Chinese PDF still to be added before release  
+**Archive status:** Release-ready; authoritative Chinese PDF and English archival companion uploaded  
 **Planned release tag:** `v4.0`  
 **Zenodo DOI:** pending release
 
@@ -15,34 +15,28 @@ This version corresponds to the June 2026 manuscript titled **《理性成瘾的
 
 This is the point at which the project moved beyond the earlier adjustment-friction construction and confronted additive representation and possible double counting directly. It is retained as a distinct historical stage even though later versions translated the problem into more standard revealed-preference and identification language.
 
-## English access
+## Bilingual access
 
-- [`v4.0_en.pdf`](./v4.0_en.pdf) is the uploaded English archival companion.
-- [`ENGLISH_READER.md`](./ENGLISH_READER.md) gives a compact English reader's translation of the main structure, equations, propositions, numerical examples, and limitations of the historical manuscript.
-- The English materials deliberately preserve the June 2026 framing. They do not retrofit later novelty audits or later terminology into this version.
-- The original Chinese manuscript remains the authoritative historical text for this stage.
+- [`v4.0.pdf`](./v4.0.pdf) is the authoritative original Chinese historical manuscript.
+- [`v4.0_en.pdf`](./v4.0_en.pdf) is the English archival companion.
+- [`ENGLISH_READER.md`](./ENGLISH_READER.md) gives a compact English reader's guide to the main structure, equations, propositions, numerical examples, and limitations of the historical manuscript.
+- The English materials preserve the June 2026 framing and do not retrofit later novelty audits or terminology into this version.
 
-## Remaining release file
-
-Before creating the `v4.0` GitHub Release, add the original Chinese PDF as:
-
-- `v4.0.pdf` — original Chinese manuscript
-
-Its prepared SHA-256 is already recorded in [`SHA256SUMS.txt`](./SHA256SUMS.txt).
+The two uploaded PDFs were checked against the prepared archival copies before release. Their exact SHA-256 values are recorded in [`SHA256SUMS.txt`](./SHA256SUMS.txt).
 
 ## Optional preservation assets
 
-The following files have also been prepared and may be committed or attached to the release for reproducibility:
+The following files may still be added later for reproducibility, but they are not required for the DOI sequence:
 
 - `v4.0.tex` — original Chinese LaTeX source
 - `v4.0_en.tex` — English companion LaTeX source
 - `fold_illustration.png` — historical fold illustration
-- `ns_illustration.png` — historical Neimark–Sacker illustration
+- `ns_illustration.png` — historical Neimark-Sacker illustration
 
-These source and figure files are useful archival assets but are not a reason to reopen or revise the historical theory.
+These source and figure files are archival assets only and are not a reason to reopen or revise the historical theory.
 
 ## Release and citation policy
 
-The intended release tag is `v4.0`. Once the GitHub Release is synchronized to Zenodo, the resulting DOI should be added here and to the repository root README. The English companion is a translation/reader for the same historical stage, not a separate theoretical version.
+The intended release tag is `v4.0`. Once the GitHub Release is synchronized to Zenodo, the resulting DOI should be added here, to the repository root README, and to `ARCHIVE_INDEX.md`. The English companion belongs to the same historical stage and is not a separate theoretical version.
 
 Earlier and later archive versions should be cited separately using their own release records and DOIs.
