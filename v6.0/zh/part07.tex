@@ -1,0 +1,113 @@
+\section{穿孔揭示次序连续性与目标达成}\label{sec:stieltjes}
+
+实数支撑族在目标边界处仍留下一个连续性问题。穿过穿孔区间 $(a,b_n]$ 的典范通行在 $b_n\downarrow a$ 时从通行记录中消失；而穿过 $[0,b_n]$ 的到达目标通行始终包含目标达成事件。PROC 要求揭示比较对于第一类消失通行保持闭合。附录~\ref{app:regular} 构造相应的局部凸拓扑，并识别其连续正泛函。
+
+\begin{assumption}[典范区间丰富性]\label{ass:richness}
+对每个模块 $m$、每个非空典范区间 $I$ 以及每个整数 $q\ge1$，区间 $I$ 都能被划分为 $q$ 个非空典范区间，并且相应通行均属于 $\Pth$。各侧范围 $[0,R_m]$ 有限。
+\end{assumption}
+
+对每个模块 $m$，令 $\widehat x_m(J)=\rho(x_m(J)+I)\in\widehat K$ 表示穿过穿孔区间 $J$ 的有利典范通行。当 $I_n=(a,b_n]\downarrow\varnothing$ 且 $b_n\downarrow a$ 时，称
+\[
+ \sigma=(m,(I_n)_{n\ge1})
+\]
+为一个可容许穿孔收缩序列；其中 远离目标 模块允许 $a\ge0$，趋向目标 模块要求 $a>0$。到达目标的序列 $[0,b_n]\downarrow\{0\}$ 则构成一个单独的边界类别。
+
+附录~\ref{app:regular} 把这种几何意义上的“消失”转化为一个局部凸拓扑 $\tau^\circ$。上述非目标穿孔区间收敛到零，而到达目标的序列留在边界类中。若归一化支撑赋值 $\varphi\in\mathcal S$ 对每个可容许穿孔收缩序列都满足
+\[
+ \varphi(\widehat x_m(I_n))\longrightarrow0,
+\]
+则称其为\emph{穿孔正则}。令 $\mathcal S_{\mathrm{reg}}$ 表示正则支撑赋值集合。附录~\ref{app:regular} 证明：它们恰好是拓扑 $\tau^\circ$ 下连续的归一化正泛函。
+
+\begin{assumption}[穿孔揭示次序闭性（PROC）]\label{def:proc}
+对任意一对实际历史 $\gamma,\eta$，若
+\[
+ \widehat d_{\gamma\eta}\in\overline{\widehat K}^{\,\tau^\circ},
+\]
+则
+\[
+ \gamma\succeq\eta.
+\]
+\end{assumption}
+
+PROC 有一个成对的行为解释：若一系列揭示弱比较通过那些最终从记录中消失的非目标通行碎片趋近某一对实际历史，则极限处的实际历史对仍保持弱排序。对小明而言，像 $(10,10+\varepsilon_n]$、$\varepsilon_n\downarrow0$ 这样的区间会作为调整事件消失，但“到达治疗目标”仍作为边界事件保留下来。
+
+\begin{theorem}[带目标达成的正则有向测度表示]\label{thm:B}
+假设 BPCC、严格方向单调性、PVBC 以及假设~\ref{ass:richness} 成立。则 PROC 成立，当且仅当正则支撑族精确表示实际路径次序：
+\[
+ \gamma\succeq\eta
+ \quad\Longleftrightarrow\quad
+ U_\varphi(\gamma)\ge U_\varphi(\eta)
+ \quad\text{对每个 }\varphi\in\mathcal S_{\mathrm{reg}}.
+\]
+在这些条件下，每个 $\varphi\in\mathcal S_{\mathrm{reg}}$ 都诱导出唯一的归一化四测度系统
+\[
+ \Lambda_\varphi=(\lambda_{T_L}^\varphi,\lambda_{T_R}^\varphi,
+                   \lambda_{A_L}^\varphi,\lambda_{A_R}^\varphi),
+\]
+其中各分量都是相应侧范围上的有限非负 Borel 测度，并满足
+\[
+\begin{aligned}
+ U_\varphi(\gamma)
+ ={}&\int h^{T_L}_\gamma\dd\lambda_{T_L}^\varphi
+   +\int h^{T_R}_\gamma\dd\lambda_{T_R}^\varphi\\
+  &-\int h^{A_L}_\gamma\dd\lambda_{A_L}^\varphi
+   -\int h^{A_R}_\gamma\dd\lambda_{A_R}^\varphi,
+\end{aligned}
+\]
+且
+\[
+ \lambda_{A_s}^\varphi(\{0\})=0,
+ \qquad
+ \lambda_{T_s}^\varphi=\alpha_s^\varphi\delta_0+\lambda_{T_s}^{\varphi,\circ},
+ \qquad
+ \alpha_s^\varphi\ge0.
+\]
+令 $\mathfrak M_{\mathrm{reg}}(\succeq)$ 表示这些归一化测度系统的集合，则
+\[
+ \gamma\succeq\eta
+ \quad\Longleftrightarrow\quad
+ U_\Lambda(\gamma)\ge U_\Lambda(\eta)
+ \quad\text{对每个 }\Lambda\in\mathfrak M_{\mathrm{reg}}(\succeq).
+\]
+该族可以包含多个归一化支撑赋值，并且不一定紧。严格方向单调性使每个典范有利通行在整个正则族上都取非负值，并且至少在一个成员上严格为正。
+\end{theorem}
+
+\begin{proof}[证明思路]
+令 $K^\circ=\overline{\widehat K}^{\,\tau^\circ}$。若一个实际差分位于 $K^\circ$ 之外，则局部凸分离给出一个连续正泛函，并且该泛函在此差分上严格为负。用序单位归一化后得到正则状态，因为 $\tau^\circ$ 的连续对偶恰好就是穿孔正则对偶。因此，PROC 使正则状态足以进行精确分离；反方向由连续性得到。对固定正则支撑赋值，细分给出区间内容的有限可加性，穿孔正则性给出自上而下的右连续性。通常的 Lebesgue--Stieltjes 构造可直接扩张 远离目标 区间内容。在 趋向目标 一侧，单调边界残差
+\[
+ \alpha_s^\varphi=\lim_{b\downarrow0}U_\varphi(p_{T_s}(0,b))\ge0
+\]
+被赋给目标单点。由于到达目标的序列属于边界类而不是穿孔消失类，该原子可以保留下来。分离与测度扩张细节见附录~\ref{app:regular}。
+\end{proof}
+
+对固定的正则支撑赋值，$\lambda_m((a,b])$ 是模块 $m$ 中跨越区间 $(a,b]$ 所得到的价值。不同正则支撑赋值可以给同一通行赋予不同的有限权重，同时仍共同与原始次序相容。若密度或参数核存在，它们只是对某个特定相容支撑赋值施加的派生限制。
+
+目标达成原子是在给定正则支撑赋值下，从侧 $s$ 到达预设目标时附加的边界价值。一次触及目标的完整经历还包括其穿孔趋向目标 与 远离目标 通行。例如，在支撑赋值 $\Lambda$ 下，从右侧距离 $b$ 连续跨越到左侧距离 $a$ 的通行价值为
+\[
+ \lambda_{T_R}^{\Lambda}([0,b])-\lambda_{A_L}^{\Lambda}((0,a])
+ =\alpha_R^{\Lambda}+\lambda_{T_R}^{\Lambda,\circ}((0,b])-\lambda_{A_L}^{\Lambda}((0,a]).
+\]
+因此，一次物理跨越贡献两个有向通行分量以及一次右侧目标达成事件。
+
+定义正则价格零空间
+\[
+ J_{\mathrm{reg}}
+ =\left\{z\in E:
+ \varphi\!\left(\rho(z+I)\right)=0
+ \text{ 对每个 }\varphi\in\mathcal S_{\mathrm{reg}}
+ \right\}.
+\]
+
+\begin{corollary}[一个共同标量化的点识别]\label{cor:common-scale}
+在定理~\ref{thm:B} 下，以下三项等价：
+\begin{enumerate}
+ \item 归一化正则支撑族 $\mathcal S_{\mathrm{reg}}$ 为单点集；
+ \item 归一化 Stieltjes 族 $\mathfrak M_{\mathrm{reg}}(\succeq)$ 为单点集；
+ \item $J_{\mathrm{reg}}$ 在 $E$ 中满足 $\codim J_{\mathrm{reg}}=1$。
+\end{enumerate}
+当这些条件成立时，未归一化的正则相容支撑赋值形成一条正射线，因此在归一化之前，四个有向测度和达成原子可以在一个共同正比例因子意义下联合识别。
+\end{corollary}
+
+在固定有限物理网格上，可容许的空集收缩区间序列最终会变为空集，因此 PROC 中的穿孔连续性部分成为空洞条件。PVBC 却不一定冗余，因为有限维账户空间仍允许无界的路径重复次数和非阿基米德次序；注~\ref{rem:finitegrid-pvbc} 给出了明确例子。因此，在不受限路径域上的点识别仍由上述余维条件决定。对于有限经验设计，归一化可加补全的唯一性则是一个由实际有效观察限制决定的有限维多面体单点问题。
+
+在定性概率中，单调连续性是从有限可加走向可数可加的经典路径 \citep{Villegas1964,ChateauneufJaffray1984}。本文的连续性类则由穿孔通行的消失生成。连续的正支撑赋值足以分离实际历史，而目标单点仍可作为一个边界原子保留。
