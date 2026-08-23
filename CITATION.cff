@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: >-
-  Please cite the specific archived version you use and, once available,
-  its version-specific Zenodo DOI. The preferred citation below points to
-  the current endpoint of the research program.
+  Please cite the specific archived version you use and its version-specific
+  Zenodo DOI. The preferred citation below points to the current endpoint of
+  the research program, v9.0.
 title: "Rational Relapse Theory: Research Archive"
 type: dataset
 authors:
@@ -27,4 +27,5 @@ preferred-citation:
       given-names: Yushang
       orcid: "https://orcid.org/0009-0001-3218-6423"
   year: 2026
-  url: "https://github.com/heggebittel-lang/Rational-Relapse-Theory/tree/main/v9.0"
+  doi: "10.5281/zenodo.22067526"
+  url: "https://doi.org/10.5281/zenodo.22067526"
