@@ -1,7 +1,8 @@
 # SHA-256 checksums for the v4.0 archival files prepared on 2026-08-23
-# These hashes identify the exact local files prepared from the historical manuscript.
+# v4.0_en.pdf below matches the English PDF currently uploaded in the repository.
+# The remaining hashes identify the prepared release files.
 
 18e68329d4ec36be8c3531afc51a743a01212f5def0bf297cd0330a2b90e3ba2  v4.0.pdf
-6dfe7dd82e5027e0252d66cf0cf8c8b7eeda7024679d7e3038b7d11923ac6c22  v4.0_en.pdf
+caf8a086dc8e53aa9a8c980b59fb126f988b2e284917703adca0a69396b49752  v4.0_en.pdf
 5fb80bdcb9b06e29b02ca4d2d97d761d74c62b583daa1e481dc3666824c4e3fb  v4.0.tex
 f2f57ef277957b20f1f8715a2a8b5eb25684abed61f792ae7690eb25a081172c  v4.0_en.tex
