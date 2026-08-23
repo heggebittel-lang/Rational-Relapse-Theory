@@ -1,0 +1,7 @@
+# SHA-256 checksums for the prepared v8.0 archival files
+# The surviving English PDF is the authoritative historical artifact.
+
+2197719052e083d0f481e371dcc11b035d05a8b69e9a505997c7f44b2a156f25  v8.0.pdf
+2c9c921d1149e6a07e4d16138f9d90a7762e9f9224c059fdd286dfdcbed7ecf5  v8.0_reconstructed.tex
+6f17de77694c45c1f9be77db7e0e12c5bb55a4ac20f7bea01d8a7ed4872daff1  v8.0_zh.pdf
+2c5c76828bce6fc252cad70f4799529d0d64fdc49b21134a22b70cef84d8e4fa  v8.0_zh.tex
