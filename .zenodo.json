@@ -1,8 +1,8 @@
 {
-  "title": "Compensated Choice and Recursive Counterfactual Identification",
+  "title": "Compensated Current Choice and Counterfactual Identification",
   "upload_type": "publication",
   "publication_type": "workingpaper",
-  "description": "Archival release of the recursive counterfactual-identification stage of the Rational Relapse Theory research program, originally labeled recursive_monetary_comparison_core_theory_v9_1. The paper studies compensated current choice in a recursive environment, including transition matching, same-index propagation under a recursive marginal restriction, and the counterfactual response directions identified after propagation. The surviving English PDF is the authoritative historical artifact because the original LaTeX source was lost. A reconstructed English source and a Chinese archival translation are included as preservation aids and are explicitly labeled as such. Later v9.0 further narrows the project toward compensated current choice and the information structure required for local counterfactual identification.",
+  "description": "Archival release and current endpoint of the Rational Relapse Theory research program. The paper studies what a target environment's baseline current choice and available compensated comparison support can identify when nearby target comparisons required for a direct local comparative static are missing. Standard compensated-choice measurement, cancellation, graph and cycle-space arguments, rank/kernel methods, finite differences, implicit-function comparative statics, and standard dynamic consequences are treated as background infrastructure. The substantive focus is the information structure and comparison support required to identify counterfactual local choice responses. The release includes the English manuscript and a Chinese archival translation of the same v9.0 scholarly object.",
   "creators": [
     {
       "name": "Cheng, Yushang",
@@ -10,13 +10,13 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "v8.0",
+  "version": "v9.0",
   "keywords": [
-    "compensated choice",
-    "recursive identification",
-    "transition matching",
-    "index propagation",
-    "counterfactual comparative statics",
-    "revealed preference"
+    "compensated current choice",
+    "counterfactual identification",
+    "continuation information",
+    "finite differences",
+    "cycle space",
+    "comparative statics"
   ]
 }
