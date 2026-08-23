@@ -27,7 +27,7 @@ This archive is intentionally versioned rather than rewritten retroactively. A r
 | [v6.0](./v6.0/) | _Recovery Histories: Exact Passage Compression and Additive Choice_ | JET_Recovery_Histories_v25 | English | DOI pending release |
 | [v7.0](./v7.0/) | _Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation_ | JME-D-26-00519 | English | DOI pending release |
 | [v8.0](./v8.0/) | _Compensated Choice and Recursive Counterfactual Identification_ | recursive_monetary_comparison_core_theory_v9_1 | English | DOI pending release |
-| [v9.0](./v9.0/) | _Compensated Current Choice and Counterfactual Identification_ | Compensated_Current_Choice_v38_Economic_Grounding | English | DOI pending release |
+| [v9.0](./v9.0/) | _Compensated Current Choice and Counterfactual Identification_ | Compensated_Current_Choice_v38_Economic_Grounding | English + Chinese | DOI pending release |
 
 The archive version numbers **v4.0–v9.0 are chronological repository labels**. They are deliberately simpler than the internal manuscript filenames and submission numbers, which remain documented in each version folder.
 
