@@ -1,0 +1,86 @@
+\section{原始补偿二元实验}
+\label{sec:primitive}
+
+令 $x$ 表示标量当前行动，$a$ 表示继承状态，$m$ 表示货币计价物。对于每一个 $(x,a)$，令 $W(x,a)$ 表示在状态 $a$ 下选择 $x$ 所产生的非计价物后果的货币度量价值。因此当前方案 $(x,m)$ 的价值为
+\begin{equation}
+ m+W(x,a).
+ \label{eq:total-value}
+\end{equation}
+当前行动引致的所有延续后果均包含在 $W$ 中。
+
+固定 $(x,a)$ 和 $\Delta>0$。比较
+\begin{equation}
+ B_0(x)=(x,m)
+ \label{eq:B0}
+\end{equation}
+与
+\begin{equation}
+ B_1(x,a;p,\Delta)=(x+\Delta,m-p\Delta),
+ \label{eq:B1}
+\end{equation}
+其中后者的延续后果由 $(x+\Delta,a)$ 所引致。其他所有当前属性保持不变，只改变 $p$。
+
+更一般地，把一个复合方案写成
+\[
+(\xi,y,m),
+\]
+其中 $\xi$ 是当前后果，$y$ 是延续后果。对观察者比较域中的任意一对方案，通过只改变其中一端的货币量来定义精确补偿转移。在保险例子中，$y$ 是续保条款，货币调整则是保费转移。上面的邻近行动比较是当前行动同时决定其延续后果的特殊情形。
+
+\begin{figure}[H]
+\centering
+\refstepcounter{figure}\label{fig:primitive}
+\includegraphics[width=\textwidth]{fig1_colored.jpg}
+\par\smallskip\small\textit{图示说明：左图通过改变补偿率 $p$ 得到有限切换率 $p_\Delta(x,a)$；右图给出 $(x,m)$ 空间中的二元方案几何。令 $\Delta\downarrow0$ 后，割线斜率趋于局部斜率 $-\pi(x,a)$。}
+\end{figure}
+
+对每个 $\Delta$，令 $p_\Delta(x,a)$ 由下式定义：
+\begin{equation}
+B_1(x,a;p_\Delta(x,a),\Delta)\sim B_0(x),
+\label{eq:threshold-indifference}
+\end{equation}
+并令
+\[
+\tau_\Delta(x,a):=p_\Delta(x,a)\Delta
+\]
+为精确补偿转移。按照图~\ref{fig:primitive} 的方向约定，
+\begin{align}
+p<p_\Delta(x,a)&\quad\Longrightarrow\quad B_1(x,a;p,\Delta)\succ B_0(x),
+\label{eq:below-threshold}\\
+p=p_\Delta(x,a)&\quad\Longrightarrow\quad B_1(x,a;p,\Delta)\sim B_0(x),
+\label{eq:at-threshold}\\
+p>p_\Delta(x,a)&\quad\Longrightarrow\quad B_1(x,a;p,\Delta)\prec B_0(x).
+\label{eq:above-threshold}
+\end{align}
+在补偿率处，
+\begin{equation}
+ m+W(x,a)
+ =m-p_\Delta(x,a)\Delta+W(x+\Delta,a),
+\end{equation}
+从而
+\begin{equation}
+\boxed{
+ p_\Delta(x,a)
+ =
+ \frac{W(x+\Delta,a)-W(x,a)}{\Delta}.}
+\label{eq:finite-rate-secant}
+\end{equation}
+因此 $p_\Delta(x,a)$ 是单位有限当前增量对应的补偿变差。
+
+沿用 Samuelson 的“斜率要素”术语，定义极限补偿率
+\begin{equation}
+\boxed{
+\pi(x,a):=\lim_{\Delta\downarrow0}p_\Delta(x,a).}
+\label{eq:pi-def}
+\end{equation}
+若 $W(\cdot,a)$ 在 $x$ 处可微，则式~\eqref{eq:finite-rate-secant} 是其右差商，因此
+\begin{equation}
+\boxed{W_x(x,a)=\pi(x,a).}
+\label{eq:Wx-pi}
+\end{equation}
+若 $\pi$ 在 $(x,a)$ 附近连续可微，则
+\begin{equation}
+W_{xa}=\pi_a,
+\qquad
+W_{xx}=\pi_x.
+\label{eq:pi-derivatives}
+\end{equation}
