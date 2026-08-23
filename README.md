@@ -24,7 +24,7 @@ For a compact bilingual navigation table, see **[ARCHIVE_INDEX.md](./ARCHIVE_IND
 | [v1.0](./v1.0/) | Initial rational-relapse sketch | v1.0 | English | [10.5281/zenodo.19743247](https://doi.org/10.5281/zenodo.19743247) |
 | [v2.0](./v2.0/) | First complete structural model | v2.x | Chinese | [10.5281/zenodo.20086392](https://doi.org/10.5281/zenodo.20086392) |
 | [v3.0](./v3.0/) | Function-family / adjustment-friction formulation | v3.0 | English + Chinese | [10.5281/zenodo.20632874](https://doi.org/10.5281/zenodo.20632874) |
-| [v4.0](./v4.0/) | Axiomatic endogenous-recovery structural model | v6.2 | Chinese + English companion | DOI pending release |
+| [v4.0](./v4.0/) | Axiomatic endogenous-recovery structural model | v6.2 | Chinese + English companion | [10.5281/zenodo.22067123](https://doi.org/10.5281/zenodo.22067123) |
 | [v5.0](./v5.0/) | _Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction_ | JME-S-26-00480 | English + Chinese | DOI pending release |
 | [v6.0](./v6.0/) | _Recovery Histories: Exact Passage Compression and Additive Choice_ | JET_Recovery_Histories_v25 | English + Chinese | DOI pending release |
 | [v7.0](./v7.0/) | _Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation_ | JME-D-26-00519 | English + Chinese | DOI pending release |
@@ -35,7 +35,7 @@ The archive version numbers **v4.0–v9.0 are chronological repository labels**.
 
 ## How to cite
 
-Please cite the **specific released version** you use rather than this repository generically. Versions v1.0–v3.0 already have Zenodo DOIs. For v4.0–v9.0, a DOI will be added after the corresponding GitHub Release is created and synchronized to Zenodo.
+Please cite the **specific released version** you use rather than this repository generically. Versions v1.0–v4.0 now have Zenodo DOIs. Versions v5.0–v9.0 will receive their own version-specific DOI records as the release sequence is completed.
 
 GitHub citation metadata is provided in [`CITATION.cff`](./CITATION.cff). It points to the current endpoint for repository-level citation, but the version-specific Zenodo DOI remains the preferred citation for a particular manuscript stage.
 
@@ -47,13 +47,13 @@ The project began from a simple question: can a rational-addiction model contain
 
 Successive versions then asked increasingly demanding questions about functional form, additive representation, double counting, path/history compression, compensated measurement, and identification. Literature auditing eventually showed that much of the mathematical machinery belongs to established revealed-preference, additive-measurement, graph, finite-difference, and dynamic-systems theory. The final stage therefore narrows the claim: the potentially substantive object is the **information structure and comparison support** required for counterfactual identification, not the standard tools used to analyze it.
 
-See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [RELEASE_GUIDE.md](./RELEASE_GUIDE.md) for the GitHub Release → Zenodo workflow, [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the current checklist, and [ZENODO_RELEASE_METADATA.md](./ZENODO_RELEASE_METADATA.md) for the v4.0–v9.0 metadata sequence.
+See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [RELEASE_GUIDE.md](./RELEASE_GUIDE.md) for the release workflow, [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the current checklist, and [ZENODO_RELEASE_METADATA.md](./ZENODO_RELEASE_METADATA.md) for the v4.0–v9.0 metadata sequence.
 
 ## Preservation policy
 
 - Earlier manuscripts are **not deleted or silently rewritten**.
 - Each archive version receives its own folder and, once ready, its own GitHub Release.
-- GitHub Releases are intended to be archived through Zenodo so that each released stage receives a persistent DOI.
+- Each historical stage should receive a **version-specific Zenodo record** rather than relying on a whole-repository archive as the primary citation object.
 - A translation or correction that materially changes a released manuscript should normally be issued as a new release/version rather than silently replacing the archived object.
 - The repository's historical versions document provenance; they should not be read as simultaneous current claims.
 
