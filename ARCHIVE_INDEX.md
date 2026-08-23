@@ -13,7 +13,7 @@ This page is the quickest way to navigate the public research archive. The folde
 | [v5.0](./v5.0/) | Additive measurement on path-generated domains | [`v5.0.pdf`](./v5.0/v5.0.pdf) | [`v5.0_zh.pdf`](./v5.0/v5.0_zh.pdf) | JME-S-26-00480 stage; version-specific Zenodo archive | [10.5281/zenodo.22067231](https://doi.org/10.5281/zenodo.22067231) |
 | [v6.0](./v6.0/) | Recovery histories and exact passage compression | [`v6.0.pdf`](./v6.0/v6.0.pdf) | [`v6.0_zh.pdf`](./v6.0/v6.0_zh.pdf) | JET recovery-histories stage; Chinese source also archived; version-specific Zenodo archive | [10.5281/zenodo.22067292](https://doi.org/10.5281/zenodo.22067292) |
 | [v7.0](./v7.0/) | Revealed reinforcement and recovery value | [`v7.0.pdf`](./v7.0/v7.0.pdf) | [`v7.0_zh.pdf`](./v7.0/v7.0_zh.pdf) | JME-D-26-00519 stage; version-specific Zenodo archive | [10.5281/zenodo.22067412](https://doi.org/10.5281/zenodo.22067412) |
-| [v8.0](./v8.0/) | Recursive counterfactual identification | [`v8.0.pdf`](./v8.0/v8.0.pdf) | [`v8.0_zh.pdf`](./v8.0/v8.0_zh.pdf) | original TeX lost; surviving PDF is authoritative; source reconstructed for preservation | pending |
+| [v8.0](./v8.0/) | Recursive counterfactual identification | [`v8.0.pdf`](./v8.0/v8.0.pdf) | [`v8.0_zh.pdf`](./v8.0/v8.0_zh.pdf) | original TeX lost; surviving PDF is authoritative; source reconstructed for preservation; version-specific Zenodo archive | [10.5281/zenodo.22067461](https://doi.org/10.5281/zenodo.22067461) |
 | [v9.0](./v9.0/) | Compensated current choice and counterfactual identification | [`v9.0.pdf`](./v9.0/v9.0.pdf) | [`v9.0_zh.pdf`](./v9.0/v9.0_zh.pdf) | current endpoint; Chinese source archived | pending |
 
 ## Reading guidance
@@ -24,4 +24,4 @@ The Chinese versions from v5.0 onward are archival translations of the correspon
 
 ## Citation guidance
 
-Please cite the specific version used. Versions v1.0–v7.0 already have Zenodo DOIs; v8.0–v9.0 will receive version-specific DOI records as the archive sequence is completed. The repository-level [`CITATION.cff`](./CITATION.cff) points readers to the current endpoint but does not replace the version-specific DOI citation.
+Please cite the specific version used. Versions v1.0–v8.0 already have Zenodo DOIs; v9.0 will receive a version-specific DOI record when the archive sequence is completed. The repository-level [`CITATION.cff`](./CITATION.cff) points readers to the current endpoint but does not replace the version-specific DOI citation.
