@@ -19,7 +19,7 @@ The original LaTeX source for this historical version was lost. The surviving PD
 - `v8.0_reconstructed.tex` — reconstructed English archival LaTeX source (prepared for the release package).
 - `v8.0_zh.pdf` — Chinese archival translation (prepared for the release package).
 - `v8.0_zh.tex` — Chinese archival LaTeX source (prepared for the release package).
-- `SHA256SUMS.txt` — exact file hashes for provenance.
+- `CHECKSUMS.md` — public SHA-256 integrity record for the prepared files.
 - `PRIORITY_AND_PROVENANCE.md` — archival provenance note.
 - `RELEASE_NOTES.md` — intended GitHub/Zenodo release description.
 
