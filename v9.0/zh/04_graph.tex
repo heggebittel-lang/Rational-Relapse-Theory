@@ -1,0 +1,103 @@
+\section{比较图与消去条件}
+\label{sec:cancellation}
+
+考虑有限个已观测补偿二元比较组成的集合 $E$。按照实验协议，所有已知且可用货币计量的当前侧金额都先从原始补偿转移中净除。记调整后的精确转移为 $\tau_e$。令
+\[
+\mathcal X=\{\xi_0,\ldots,\xi_N\}
+\]
+为完成这一已知调整后在这些比较中出现的不同\emph{当前节点}。一个当前节点记录当前侧仍具有不受限制货币价值的属性。因此，即使某个已知的环境特定当前项不同，只要两个方案具有相同当前组合，它们仍可以使用同一个节点；该已知项已经从 $\tau_e$ 中净除。每个比较 $e$ 有尾节点 $s(e)$ 与头节点 $t(e)$。
+
+令 $D\in\Z^{(N+1)\times |E|}$ 为有向节点--边关联矩阵，其第 $e$ 列为
+\begin{equation}
+ d_e=\mathbf e_{t(e)}-\mathbf e_{s(e)}.
+ \label{eq:current-incidence}
+\end{equation}
+因此 $Dz=0$ 表示整数边集合 $z\in\Z^{E}$ 在每个当前节点上的流入次数与流出次数完全相同；也就是说，$Dz=0$ 是精确节点平衡。
+
+实验协议还记录每条比较所携带的带符号延续后果。固定有限个延续标签并做一个归一化后，把边 $e$ 的延续对比写成 $q_e\in\Z^m$，并把这些列收集为
+\[
+Q\in\Z^{m\times |E|}.
+\]
+令 $\tau=(\tau_e)_{e\in E}\in\R^{E}$。
+
+\begin{definition}[消去条件]
+\label{def:joint-cancellation}
+若
+\begin{equation}
+\boxed{
+Dz=0,\quad Qz=0
+\quad\Longrightarrow\quad
+z^{\mathsf T}\tau=0
+\qquad(z\in\Z^{E}),}
+\label{eq:joint-cancellation}
+\end{equation}
+则称有限补偿数据满足\emph{消去条件}。
+\end{definition}
+
+该条件要求：只要当前关联与延续对比同时为零，货币转移的加总也必须为零。
+
+\begin{theorem}[加法货币表示]
+\label{thm:additive-graph}
+消去条件成立，当且仅当存在当前节点势 $u\in\R^{N+1}$ 和延续势 $v\in\R^m$，使得
+\begin{equation}
+\boxed{
+\tau=D^{\mathsf T}u+Q^{\mathsf T}v.}
+\label{eq:graph-representation}
+\end{equation}
+该表示在观测关联矩阵与延续矩阵的零空间意义下唯一。势 $(u,v)$ 是由有限数据得到的表示坐标，并不是第~\ref{sec:locus} 节引入的结构函数 $(u_J,V)$。
+\end{theorem}
+
+图~\ref{fig:cancellation} 展示一个节点关联循环及其延续提升。
+
+\begin{figure}[H]
+\centering
+\refstepcounter{figure}\label{fig:cancellation}
+\includegraphics[width=\textwidth]{fig3_cancellation.jpg}
+\par\smallskip\small\textit{图示说明：面板 (i) 给出满足 $Dr=0$ 的当前层关联循环；面板 (ii) 把同一组基点提升到延续空间，提升后的路径一般不闭合，其垂直缺口即可观察的延续差异；面板 (iii) 令循环尺度收缩到零，从而把有限循环转化为局部导数信息并最终进入目标一阶条件。}
+\end{figure}
+
+\begin{corollary}[循环方程]
+\label{cor:cycle-residual}
+在消去条件成立时，每个满足 $Dz=0$ 的当前循环 $z\in\Z^E$ 都满足
+\begin{equation}
+\boxed{
+z^{\mathsf T}\tau=(Qz)^{\mathsf T}v.}
+\label{eq:cycle-residual}
+\end{equation}
+\end{corollary}
+
+由于 $z^{\mathsf T}D^{\mathsf T}u=(Dz)^{\mathsf T}u=0$，当前节点价值会从每一条循环方程中消失。
+
+\begin{theorem}[有限识别]
+\label{thm:feasible-finite}
+假设消去条件成立，并考虑模型集合
+\[
+\mathcal M(\tau)
+=
+\{(u,v):D^{\mathsf T}u+Q^{\mathsf T}v=\tau\}.
+\]
+对目标延续对比 $c\in\Z^m$，$c^{\mathsf T}v$ 在 $\mathcal M(\tau)$ 上得到点识别，当且仅当
+\begin{equation}
+\boxed{
+\exists\,k\ge1,\ z\in\Z^E
+\quad\text{使得}\quad
+Dz=0,\qquad Qz=kc.}
+\label{eq:feasible-cycle}
+\end{equation}
+当式~\eqref{eq:feasible-cycle} 成立时，
+\begin{equation}
+\boxed{
+c^{\mathsf T}v=\frac{z^{\mathsf T}\tau}{k}.}
+\label{eq:feasible-price}
+\end{equation}
+否则，相对于式~\eqref{eq:graph-representation}，
+\begin{equation}
+\boxed{
+\{c^{\mathsf T}v:(u,v)\in\mathcal M(\tau)\}=\R.}
+\label{eq:feasible-allR}
+\end{equation}
+\end{theorem}
+
+被识别的延续对比，恰好是整数循环格在有限复制之后经过 $Q$ 映射得到的像。
+
+除非另有说明，下文的有限识别均相对于加法表示~\eqref{eq:graph-representation} 而言；局部识别则相对于满足观测循环方程的约化式 $C^m$ 延续函数。若固定的共同 $V$ 与固定延续映射在不同点之间施加进一步结构限制，则相应的结构识别集可能更小。
