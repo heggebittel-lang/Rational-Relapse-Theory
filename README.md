@@ -25,7 +25,7 @@ For a compact bilingual navigation table, see **[ARCHIVE_INDEX.md](./ARCHIVE_IND
 | [v2.0](./v2.0/) | First complete structural model | v2.x | Chinese | [10.5281/zenodo.20086392](https://doi.org/10.5281/zenodo.20086392) |
 | [v3.0](./v3.0/) | Function-family / adjustment-friction formulation | v3.0 | English + Chinese | [10.5281/zenodo.20632874](https://doi.org/10.5281/zenodo.20632874) |
 | [v4.0](./v4.0/) | Axiomatic endogenous-recovery structural model | v6.2 | Chinese + English companion | [10.5281/zenodo.22067123](https://doi.org/10.5281/zenodo.22067123) |
-| [v5.0](./v5.0/) | _Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction_ | JME-S-26-00480 | English + Chinese | DOI pending release |
+| [v5.0](./v5.0/) | _Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction_ | JME-S-26-00480 | English + Chinese | [10.5281/zenodo.22067231](https://doi.org/10.5281/zenodo.22067231) |
 | [v6.0](./v6.0/) | _Recovery Histories: Exact Passage Compression and Additive Choice_ | JET_Recovery_Histories_v25 | English + Chinese | DOI pending release |
 | [v7.0](./v7.0/) | _Revealed Reinforcement and Recovery Value: Compensated Choice under State-Dependent Valuation_ | JME-D-26-00519 | English + Chinese | DOI pending release |
 | [v8.0](./v8.0/) | _Compensated Choice and Recursive Counterfactual Identification_ | recursive_monetary_comparison_core_theory_v9_1 | English + Chinese (source reconstructed from surviving PDF) | DOI pending release |
@@ -35,7 +35,7 @@ The archive version numbers **v4.0–v9.0 are chronological repository labels**.
 
 ## How to cite
 
-Please cite the **specific released version** you use rather than this repository generically. Versions v1.0–v4.0 now have Zenodo DOIs. Versions v5.0–v9.0 will receive their own version-specific DOI records as the release sequence is completed.
+Please cite the **specific released version** you use rather than this repository generically. Versions v1.0–v5.0 now have Zenodo DOIs. Versions v6.0–v9.0 will receive their own version-specific DOI records as the release sequence is completed.
 
 GitHub citation metadata is provided in [`CITATION.cff`](./CITATION.cff). It points to the current endpoint for repository-level citation, but the version-specific Zenodo DOI remains the preferred citation for a particular manuscript stage.
 
