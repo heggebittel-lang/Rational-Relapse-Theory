@@ -4,8 +4,8 @@
 **Chinese title:** 《恢复路径历史：精确通行压缩与可加选择》  
 **Original internal label:** JET_Recovery_Histories_v25 (refined source)  
 **Language:** English + Chinese  
-**Planned release tag:** `v6.0`  
-**Zenodo DOI:** pending release
+**Release tag:** `v6.0`  
+**Zenodo DOI:** [10.5281/zenodo.22067292](https://doi.org/10.5281/zenodo.22067292)
 
 ## Manuscript identity
 
@@ -13,7 +13,7 @@ This version studies which features of a one-dimensional target-relative adjustm
 
 The Chinese version is a faithful archival translation of the same manuscript rather than a new theoretical version. Mathematical notation, theorem/label structure, references, and the two original figures are preserved. Figure-internal English labels remain in the historical graphics, while the Chinese manuscript supplies Chinese captions and explanation.
 
-## Intended release files
+## Release files
 
 - `v6.0.pdf` — English archival manuscript
 - `v6.0.tex` — English LaTeX source
@@ -25,5 +25,11 @@ The Chinese version is a faithful archival translation of the same manuscript ra
 - `SHA256SUMS.txt` — file integrity manifest
 - `PRIORITY_AND_PROVENANCE.md` — provenance note
 - `RELEASE_NOTES.md` — prepared release note
+
+The Zenodo citation object for this stage contains the v6.0 archive only. The repository itself continues to preserve the complete research history.
+
+## Citation policy
+
+Please cite this version using its Zenodo DOI. The Chinese translation belongs to the same historical stage and is not a separate theoretical version.
 
 This repository label is chronological. It does not reproduce the original internal `v25` numbering.
