@@ -1,0 +1,61 @@
+\section{一个动态后果}
+\label{sec:dynamics}
+
+令继承状态为 $s\in\R^d$，当前行动为 $x\in\R^m$，已知的技术运动规律为
+\[
+s^+=T(s,x).
+\]
+若比较分析识别一个可微政策 $x=g(s)$，则诱导出的闭环映射为
+\begin{equation}
+\Phi(s):=T(s,g(s)).
+\label{eq:closed-loop-map}
+\end{equation}
+由链式法则，
+\begin{equation}
+\boxed{
+D\Phi(s)=D_sT(s,g(s))+D_xT(s,g(s))Dg(s).}
+\label{eq:closed-loop-jacobian}
+\end{equation}
+因此，识别政策导数就识别了状态转移的 Jacobian。只要相应的政策 jet 已识别，更高阶的转移导数由普通多元链式法则得到。
+
+从这里开始，结论都是标准的离散时间动力系统结果 \citep{elaydi2005,kuznetsov2004}。在双曲不动点处，式~\eqref{eq:closed-loop-jacobian} 的乘子给出通常的局部稳定性和鞍点结论。在临界乘子处，更高阶转移导数可能变得重要。对于归一化到零且满足 $\Phi'(0)=-1$ 的标量不动点，通常的三次 flip 系数为
+\begin{equation}
+\boxed{
+c_{\mathrm{flip}}
+=
+\frac14\Phi''(0)^2+\frac16\Phi'''(0).}
+\label{eq:flip-coefficient}
+\end{equation}
+等价地，
+\[
+\Phi^2(y)=y-2c_{\mathrm{flip}}y^3+o(|y|^3).
+\]
+因此，只要比较数据识别三阶转移 jet，它们也就识别这个标准系数。一对非实的单位模乘子构成标准的 Neimark--Sacker 临界配置；同样地，本文真正关心的识别问题是转移导数与正规形系数，而不是动力学分类本身。图~\ref{fig:critical-dynamics} 概括了这一区别。
+
+\begin{figure}[H]
+\centering
+\refstepcounter{figure}\label{fig:critical-dynamics}
+\textbf{图 \thefigure. Jacobian 之外的临界动力学}\par\smallskip
+\begin{minipage}[c]{0.755\textwidth}
+\centering
+\includegraphics[width=\linewidth,trim=0 0 410bp 78bp,clip]{fig4_critical.jpg}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.225\textwidth}
+\centering\small
+\textbf{识别阶梯}\par\medskip
+\fbox{\parbox{0.84\linewidth}{\centering 补偿比较}}\\[4pt]
+$\downarrow$\\[4pt]
+\fbox{\parbox{0.84\linewidth}{\centering 延续导数}}\\[4pt]
+$\downarrow$\\[4pt]
+\fbox{\parbox{0.84\linewidth}{\centering 政策 jet}}\\[4pt]
+$\downarrow$\\[4pt]
+\fbox{\parbox{0.84\linewidth}{\centering 转移 jet}}\\[7pt]
+\fcolorbox{blue!60!black}{white}{\parbox{0.86\linewidth}{\centering\scriptsize
+无单位模乘子：\\一阶线性化即可分类}}\\[7pt]
+\fcolorbox{orange!80!black}{white}{\parbox{0.86\linewidth}{\centering\scriptsize
+存在单位模乘子：\\高阶漂移可能决定结果}}
+\end{minipage}
+\par\smallskip\small\textit{图示说明：左侧原图展示一维 flip 与二维临界旋转中的稳定性边界及高阶漂移；右侧强调本文的识别顺序：由补偿比较得到延续导数，再得到政策 jet 与转移 jet。远离临界边界时一阶 Jacobian 足够；处于临界区间时高阶项可能决定局部动力学。}
+\end{figure}
+
+在平稳贴现的特例下，可以把标准 Bellman 验证与价值迭代应用于已经恢复的政策 \citep{bellman1957,stokeylucasprescott1989}。因此，递归在识别之后只是表示与计算工具，而不是识别限制。
