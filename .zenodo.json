@@ -1,8 +1,8 @@
 {
-  "title": "Additive Measurement on Path-Generated Domains: Directed Recovery in Rational Addiction",
+  "title": "Recovery Histories: Exact Passage Compression and Additive Choice",
   "upload_type": "publication",
   "publication_type": "workingpaper",
-  "description": "Archival release of the path-generated-domain stage of the Rational Relapse Theory research program, originally submitted as JME-S-26-00480. The paper shifts the primitive object from a recovery utility function to target-relative continuous paths and accessible ledgers, and studies a finite-cancellation and Stieltjes-representation route. Rational addiction is treated as the leading economic application. The release includes the English historical manuscript and a Chinese archival translation. Later versions substantially revise the primitives, terminology, and contribution claims.",
+  "description": "Archival release of the recovery-histories stage of the Rational Relapse Theory research program, originally labeled JET_Recovery_Histories_v25. The paper studies exact passage compression of target-relative adjustment histories, including a universal passage carrier, path fibers, balance and cancellation conditions, directed Stieltjes representation, and finite-data implications on a non-additively-closed history domain. The release includes the English historical manuscript and a Chinese archival translation preserving the theorem and label structure. Later archive versions substantially revise the primitives, terminology, and identification focus.",
   "creators": [
     {
       "name": "Cheng, Yushang",
@@ -10,13 +10,13 @@
     }
   ],
   "license": "cc-by-4.0",
-  "version": "v5.0",
+  "version": "v6.0",
   "keywords": [
-    "additive measurement",
-    "path-generated domains",
-    "finite cancellation",
+    "recovery histories",
+    "passage compression",
+    "additive choice",
+    "path fibers",
     "Stieltjes representation",
-    "directed recovery",
-    "rational addiction"
+    "measurement"
   ]
 }
