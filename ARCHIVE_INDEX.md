@@ -10,7 +10,7 @@ This page is the quickest way to navigate the public research archive. The folde
 | [v2.0](./v2.0/) | First complete structural model | — | folder | original Chinese stage | [10.5281/zenodo.20086392](https://doi.org/10.5281/zenodo.20086392) |
 | [v3.0](./v3.0/) | Function-family / adjustment-friction formulation | folder | folder | original bilingual archive | [10.5281/zenodo.20632874](https://doi.org/10.5281/zenodo.20632874) |
 | [v4.0](./v4.0/) | Axiomatic endogenous-recovery structural model | [`v4.0_en.pdf`](./v4.0/v4.0_en.pdf) + [`ENGLISH_READER.md`](./v4.0/ENGLISH_READER.md) | [`v4.0.pdf`](./v4.0/v4.0.pdf) | original label v6.2; Chinese PDF is authoritative; Zenodo deposit contains the v4.0 archive only | [10.5281/zenodo.22067123](https://doi.org/10.5281/zenodo.22067123) |
-| [v5.0](./v5.0/) | Additive measurement on path-generated domains | [`v5.0.pdf`](./v5.0/v5.0.pdf) | [`v5.0_zh.pdf`](./v5.0/v5.0_zh.pdf) | JME-S-26-00480 stage | pending |
+| [v5.0](./v5.0/) | Additive measurement on path-generated domains | [`v5.0.pdf`](./v5.0/v5.0.pdf) | [`v5.0_zh.pdf`](./v5.0/v5.0_zh.pdf) | JME-S-26-00480 stage; version-specific Zenodo archive | [10.5281/zenodo.22067231](https://doi.org/10.5281/zenodo.22067231) |
 | [v6.0](./v6.0/) | Recovery histories and exact passage compression | [`v6.0.pdf`](./v6.0/v6.0.pdf) | [`v6.0_zh.pdf`](./v6.0/v6.0_zh.pdf) | JET recovery-histories stage; Chinese source also archived | pending |
 | [v7.0](./v7.0/) | Revealed reinforcement and recovery value | [`v7.0.pdf`](./v7.0/v7.0.pdf) | [`v7.0_zh.pdf`](./v7.0/v7.0_zh.pdf) | JME-D-26-00519 stage | pending |
 | [v8.0](./v8.0/) | Recursive counterfactual identification | [`v8.0.pdf`](./v8.0/v8.0.pdf) | [`v8.0_zh.pdf`](./v8.0/v8.0_zh.pdf) | original TeX lost; surviving PDF is authoritative; source reconstructed for preservation | pending |
@@ -24,4 +24,4 @@ The Chinese versions from v5.0 onward are archival translations of the correspon
 
 ## Citation guidance
 
-Please cite the specific version used. Versions v1.0–v4.0 already have Zenodo DOIs; v5.0–v9.0 will receive version-specific DOI records as the archive sequence is completed. The repository-level [`CITATION.cff`](./CITATION.cff) points readers to the current endpoint but does not replace the version-specific DOI citation.
+Please cite the specific version used. Versions v1.0–v5.0 already have Zenodo DOIs; v6.0–v9.0 will receive version-specific DOI records as the archive sequence is completed. The repository-level [`CITATION.cff`](./CITATION.cff) points readers to the current endpoint but does not replace the version-specific DOI citation.
