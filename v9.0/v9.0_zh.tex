@@ -1,0 +1,67 @@
+\documentclass[UTF8,11pt]{ctexart}
+\usepackage[margin=1.02in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[round,authoryear]{natbib}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+\usepackage[nameinlink,capitalize,noabbrev]{cleveref}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{float}
+\emergencystretch=2em
+
+\newtheorem{theorem}{定理}[section]
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{lemma}[theorem]{引理}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{remark}[theorem]{注}
+
+\crefname{theorem}{定理}{定理}
+\crefname{proposition}{命题}{命题}
+\crefname{corollary}{推论}{推论}
+\crefname{lemma}{引理}{引理}
+\crefname{definition}{定义}{定义}
+\crefname{remark}{注}{注}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\E}{\mathbb E}
+\newcommand{\diff}{\mathop{}\!d}
+
+\title{补偿性当前选择与反事实识别}
+\author{}
+\date{2026年8月}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+对一个有限的当前变化进行精确补偿转移，可以把该变化置于共同的货币尺度上；令变化幅度趋近于零，则可揭示相应的局部斜率要素。当目标环境本身可以在局部被观察时，在不同继承状态下重复这一比较即可得到直接的比较静态。本文关注的是反事实情形：目标环境中的基准选择可以观察，但直接计算比较静态所需的邻近补偿比较并不存在。
+
+观测到的比较构成一个有向图。其当前层投影中的循环会消去任意的当前节点价值。在消去条件成立时，转移量具有加法表示，而数据所识别的延续差异恰好是当前循环空间在延续关联映射下的像。其维数为
+\[
+\operatorname{rank}\!\begin{pmatrix}D\\Q\end{pmatrix}-\operatorname{rank}D.
+\]
+新增一条比较至多增加一个延续方向，并且当且仅当它在当前关联上是冗余的、而在当前--延续联合关联上并不冗余时才会增加一个方向。随后，一个原始的双区块设计可以识别 $H_{xa}$ 与 $H_{xx}$，尽管任一抽样点上的水平值 $H(z)$ 都没有得到点识别。更一般地，收缩循环可以消去所有低阶多项式项而保留某个高阶矩，因此可以在不恢复低阶 jet 的情况下识别高阶局部泛函。这些已识别导数进入目标环境的一阶条件，从而识别反事实比较静态。对多个环境以及状态动态的扩展，则在基于比较的识别步骤之后使用标准的势函数和动力系统论证。
+\end{abstract}
+
+\input{zh/01_intro}
+\input{zh/02_primitive}
+\input{zh/03_choice}
+\input{zh/04_graph}
+\input{zh/05a_local_intro}
+\input{zh/05b_finite_differences}
+\input{zh/05c_second_order}
+\input{zh/05d_higher_order}
+\input{zh/06_counterfactual}
+\input{zh/07_environments}
+\input{zh/08_dynamics}
+\input{zh/09_domain}
+\input{zh/10_conclusion}
+\input{zh/11_appendix}
+\input{zh/12_bibliography}
