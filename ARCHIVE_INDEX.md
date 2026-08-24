@@ -1,6 +1,6 @@
 # Archive Index
 
-This page is the quickest way to navigate the public research archive. The folders preserve historical stages rather than simultaneous current claims. For intellectual history, see [`RESEARCH_HISTORY.md`](./RESEARCH_HISTORY.md). For release mechanics, see [`RELEASE_GUIDE.md`](./RELEASE_GUIDE.md).
+This page is the quickest way to navigate the public research archive. The folders preserve historical stages rather than simultaneous current claims. For intellectual history, see [`RESEARCH_HISTORY.md`](./RESEARCH_HISTORY.md). For the completed archival release record, see [`RELEASE_READINESS.md`](./RELEASE_READINESS.md).
 
 ## Version index
 
