@@ -65,7 +65,7 @@ The project began from a simple question: can a rational-addiction model contain
 
 Successive versions then asked increasingly demanding questions about functional form, additive representation, double counting, path/history compression, compensated measurement, and identification. Literature auditing eventually showed that much of the mathematical machinery belongs to established revealed-preference, additive-measurement, graph, finite-difference, and dynamic-systems theory. The final stage therefore narrows the claim: the potentially substantive object is the **information structure and comparison support** required for counterfactual identification, not the standard tools used to analyze it.
 
-See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [WHY_THE_PROJECT_CHANGED.md](./WHY_THE_PROJECT_CHANGED.md) for the detailed research diagnosis, [RELEASE_GUIDE.md](./RELEASE_GUIDE.md) for the release workflow, [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the completed release record, and [ZENODO_RELEASE_METADATA.md](./ZENODO_RELEASE_METADATA.md) for the v4.0–v9.0 metadata sequence.
+See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [WHY_THE_PROJECT_CHANGED.md](./WHY_THE_PROJECT_CHANGED.md) for the detailed research diagnosis, and [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the completed archival release record.
 
 ## Preservation policy
 
