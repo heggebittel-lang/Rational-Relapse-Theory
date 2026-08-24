@@ -5,8 +5,8 @@
 **Original internal label:** v6.2  
 **Original manuscript date:** 26 June 2026  
 **Public archival record updated:** 23 August 2026  
-**Planned GitHub Release tag:** `v4.0`  
-**Zenodo DOI:** pending release
+**GitHub Release tag:** `v4.0`  
+**Zenodo DOI:** [10.5281/zenodo.22067123](https://doi.org/10.5281/zenodo.22067123)
 
 ## Purpose
 
@@ -32,8 +32,8 @@ The provenance chain for this stage consists of, where available:
 - the repository commit history;
 - the archived English reader/translation;
 - the SHA-256 file hashes;
-- the future GitHub Release tagged `v4.0`;
-- the future Zenodo record and DOI;
+- the GitHub Release tagged `v4.0`;
+- the Zenodo record and DOI [10.5281/zenodo.22067123](https://doi.org/10.5281/zenodo.22067123);
 - earlier submission or correspondence records retained by the author.
 
 These records provide public evidence of chronology and authorship/provenance. A DOI is a persistent identifier and timestamped archival record; it is not by itself a legal adjudication of authorship, copyright ownership, patent rights, or priority.
