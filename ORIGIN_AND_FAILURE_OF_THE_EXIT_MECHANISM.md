@@ -42,15 +42,15 @@
 
 Marshallian demand
 
-\[
+$$
 x(p,w)
-\]
+$$
 
 与 Hicksian demand
 
-\[
+$$
 h(p,\bar u)
-\]
+$$
 
 不是两种竞争商品，而是同一偏好在两个不同优化问题下产生的需求对象。因此，从 Marshallian/Hicksian duality 并不能推出一种独立的“退出商品”。
 
@@ -58,11 +58,11 @@ h(p,\bar u)
 
 我虽然把一种 **trade-off** 错误地理解成了一种 **commodity**，却开始认真思考：
 
-\[
+$$
 \boxed{
 \text{获得一个给定增益时，行为人愿意牺牲多少另一种东西？}
 }
-\]
+$$
 
 后来真正存活下来的不是 exit commodity，而是 **compensation**。
 
@@ -72,15 +72,15 @@ h(p,\bar u)
 
 另一个最初非常朴素的想法，是把所有选择压成两边：
 
-\[
+$$
 \text{成瘾品}
-\]
+$$
 
 与
 
-\[
+$$
 \text{普通商品和储蓄}.
-\]
+$$
 
 我当时担心一个很直接的批评：
 
@@ -96,13 +96,13 @@ h(p,\bar u)
 
 但后来我逐渐发现，真正重要的并不是“两商品世界”。真正重要的是一个实验结构：
 
-\[
+$$
 \boxed{
 \text{一个标准化的目标增益}
 +
 \text{一个单调的补偿方向}
 }
-\]
+$$
 
 也就是说，我并不需要声称现实只有两种商品。我只需要构造一个二元比较，使两个方案之间只留下：
 
@@ -117,35 +117,35 @@ h(p,\bar u)
 
 最初的二元化只是为了简化模型。后来它逐渐变成：
 
-\[
+$$
 B_0=(x,m)
-\]
+$$
 
 与
 
-\[
+$$
 B_1(p)=(x+\Delta,m-p\Delta).
-\]
+$$
 
-固定增益 \(\Delta\)，改变补偿价格 \(p\)，直到行为人恰好无差异：
+固定增益 $\Delta$，改变补偿价格 $p$，直到行为人恰好无差异：
 
-\[
+$$
 B_0\sim B_1(p_\Delta(x)).
-\]
+$$
 
 于是一个二元选择不再只是告诉我们：
 
-\[
+$$
 A\succ B.
-\]
+$$
 
 它给出了一个有限而精确的 trade-off：
 
-\[
+$$
 \text{一个标准化增益}
 \sim
 \text{一个精确补偿损失}.
-\]
+$$
 
 这件事在最初提出 exit mechanism 时完全不是我的研究目标。我当时只是想让消费者“无处可逃”。但后来真正有力量的地方恰恰变成：
 
@@ -153,17 +153,17 @@ A\succ B.
 
 多个这样的有限比较一旦组合起来，就开始产生新的问题：
 
-\[
+$$
 \text{它们能不能同时来自同一个偏好结构？}
-\]
+$$
 
-\[
+$$
 \text{什么时候只能校准，什么时候具有拒绝力？}
-\]
+$$
 
-\[
+$$
 \text{什么时候能够识别相对价值？}
-\]
+$$
 
 这最终成为后来 compensated-choice 研究的真正来源之一。
 
@@ -177,34 +177,34 @@ A\succ B.
 
 因此到了 [`v3.0`](./v3.0/)，我把退出函数推广成一个函数族：
 
-\[
+$$
 g(c,A)=\int_c^A q(s)\,ds,
 \qquad q(s)>0,\quad q'(s)<0,
-\]
+$$
 
 并尝试通过一组公理描述允许的整个函数类。原始的函数族、state-invariance 命题和 spiral-relapse 叙述仍保留在 [`v3.0/README.md`](./v3.0/README.md) 中。
 
 我想证明的已经不再是：
 
-\[
+$$
 \exists g_0\quad \text{使模型产生想要的现象},
-\]
+$$
 
 而是尽可能接近：
 
-\[
+$$
 \forall g\in\mathcal G,
 \quad
 \text{主要结论仍然成立}.
-\]
+$$
 
 这是整个项目第一次明确追求 functional-form robustness。
 
 v3.0 也是当时最令我兴奋的一版。它产生了非常漂亮的 spiral relapse dynamics。我曾经认为，如果一个完全理性的优化模型真的能够内生产生
 
-\[
+$$
 \text{退出}\rightarrow\text{复发}\rightarrow\text{再次退出}
-\]
+$$
 
 的螺旋轨迹，那么这个结果可能会非常重要。
 
@@ -216,95 +216,95 @@ v3.0 也是当时最令我兴奋的一版。它产生了非常漂亮的 spiral r
 
 考虑一个最简单的版本。假设同一可行集和同一状态转移下，生命周期目标写成
 
-\[
+$$
 \sum_{t=0}^{\infty}
 \beta^t
 \left[
 u(c_t,A_t)+g(c_t,A_t)-\Phi(c_t,c_{t-1})
 \right],
-\]
+$$
 
-其中 \(g\) 被解释成一个独立的 exit / recovery value。
+其中 $g$ 被解释成一个独立的 exit / recovery value。
 
 现在定义 reduced-form utility：
 
-\[
+$$
 \bar u(c,A)=u(c,A)+g(c,A).
-\]
+$$
 
 那么对任意可行历史，都有
 
-\[
+$$
 u(c_t,A_t)+g(c_t,A_t)=\bar u(c_t,A_t).
-\]
+$$
 
 因此原模型与
 
-\[
+$$
 \sum_{t=0}^{\infty}
 \beta^t
 \left[
 \bar u(c_t,A_t)-\Phi(c_t,c_{t-1})
 \right]
-\]
+$$
 
 在每一条可行路径上的目标函数完全相同。
 
 于是它们产生同样的：
 
-\[
+$$
 \text{preference ordering},
 \qquad
 \text{optimal policy},
 \qquad
 \text{Bellman / Euler conditions},
-\]
+$$
 
-\[
+$$
 \text{steady states},
 \qquad
 \text{closed-loop dynamics}.
-\]
+$$
 
-如果用 \(\mathcal O\) 表示由模型产生的可观察行为，那么：
+如果用 $\mathcal O$ 表示由模型产生的可观察行为，那么：
 
-\[
+$$
 \boxed{
 \mathcal O(u,g)=\mathcal O(u+g,0).
 }
-\]
+$$
 
-所以，仅仅从这些行为数据中，没有办法证明 \(g\) 是一种独立存在的 economic mechanism。它可以完全被吸收到原来的 state-dependent utility 中。
+所以，仅仅从这些行为数据中，没有办法证明 $g$ 是一种独立存在的 economic mechanism。它可以完全被吸收到原来的 state-dependent utility 中。
 
 这才是最初 exit mechanism 最根本的失败。
 
-> **Scope of this argument.** 这个结论针对的是：所谓 exit value 没有自己的独立可行选择维度，而只是已有变量 \((c,A)\) 的一个附加效用项。若未来模型真的引入一个可独立操纵、可观察或被外生扰动的退出维度，那么需要重新分析；这里否定的是早期模型中那个可以被 reduced form 完全吸收的独立机制解释。
+> **Scope of this argument.** 这个结论针对的是：所谓 exit value 没有自己的独立可行选择维度，而只是已有变量 $(c,A)$ 的一个附加效用项。若未来模型真的引入一个可独立操纵、可观察或被外生扰动的退出维度，那么需要重新分析；这里否定的是早期模型中那个可以被 reduced form 完全吸收的独立机制解释。
 
 ---
 
 ## 7. 更严重的是：分解本身不被识别
 
-问题还不只是 \(g\) 可以被一次性吸收。
+问题还不只是 $g$ 可以被一次性吸收。
 
-对于任意合适的函数 \(H(c,A)\)，令
+对于任意合适的函数 $H(c,A)$，令
 
-\[
+$$
 u^H=u+H,
 \qquad
 g^H=g-H.
-\]
+$$
 
 那么
 
-\[
+$$
 u^H+g^H=u+g.
-\]
+$$
 
 于是存在一整族 observationally equivalent decompositions：
 
-\[
+$$
 (u,g)\sim(u+H,g-H).
-\]
+$$
 
 因此问题不是：
 
@@ -312,11 +312,11 @@ u^H+g^H=u+g.
 
 而是：
 
-\[
+$$
 \boxed{
 \text{行为数据没有告诉我们总价值应该怎样被拆成这两个部分。}
 }
-\]
+$$
 
 normalization 可以选择一个表示，但它不能创造 mechanism identification。
 
@@ -326,44 +326,44 @@ normalization 可以选择一个表示，但它不能创造 mechanism identifica
 
 v3.0 的
 
-\[
+$$
 g(c,A)=\int_c^A q(s)\,ds
-\]
+$$
 
 确实解决了一个问题：结果不必依赖某一个线性、指数或者二次函数。
 
-但是如果令 \(Q'=q\)，那么
+但是如果令 $Q'=q$，那么
 
-\[
+$$
 g(c,A)=Q(A)-Q(c),
-\]
+$$
 
 仍然可以写进
 
-\[
+$$
 \bar u(c,A)=u(c,A)+Q(A)-Q(c).
-\]
+$$
 
 所以 v3.0 解决的是
 
-\[
+$$
 \text{functional-form robustness},
-\]
+$$
 
 却没有解决
 
-\[
+$$
 \text{mechanism identification}.
-\]
+$$
 
 这是我后来才真正认识到的区别：
 
-\[
+$$
 \boxed{
 \text{一个机制可以对很大的函数类稳健，}
 \text{同时仍然完全不可独立识别。}
 }
-\]
+$$
 
 ---
 
@@ -373,48 +373,48 @@ g(c,A)=Q(A)-Q(c),
 
 但如果它真的像一种独立商品一样进入选择，那么原则上应该存在
 
-\[
+$$
 (c,A,e_1)
-\]
+$$
 
 和
 
-\[
+$$
 (c,A,e_2),
 \qquad e_1\neq e_2,
-\]
+$$
 
-即在相同的 \((c,A)\) 下仍能独立改变 \(e\)。
+即在相同的 $(c,A)$ 下仍能独立改变 $e$。
 
 如果实际上
 
-\[
+$$
 e=h(c,A),
-\]
+$$
 
 那么在可行集上
 
-\[
+$$
 U(c,A,e)=U(c,A,h(c,A))\equiv\widetilde U(c,A).
-\]
+$$
 
-此时 \(e\) 没有增加新的 feasible dimension，它只是已有变量的重新编码。
+此时 $e$ 没有增加新的 feasible dimension，它只是已有变量的重新编码。
 
 因此，我最初真正犯的错误可以很简单地表达：
 
-\[
+$$
 \boxed{
 \text{我把一个 trade-off 当成了一个 commodity。}
 }
-\]
+$$
 
 后来存活下来的版本则是：
 
-\[
+$$
 \boxed{
 \text{不选择不是一种新商品，但放弃可以形成一个可测量的 trade-off。}
 }
-\]
+$$
 
 ---
 
@@ -422,21 +422,21 @@ U(c,A,e)=U(c,A,h(c,A))\equiv\widetilde U(c,A).
 
 v3.0 中最令我着迷的结果是 spiral relapse。
 
-但是，如果 \((u,g)\) 和 \((u+g,0)\) 在每一条可行历史上的 objective 完全相同，那么两者的 optimal policy 相同。于是 closed-loop transition map \(\Psi\) 相同，局部 Jacobian
+但是，如果 $(u,g)$ 和 $(u+g,0)$ 在每一条可行历史上的 objective 完全相同，那么两者的 optimal policy 相同。于是 closed-loop transition map $\Psi$ 相同，局部 Jacobian
 
-\[
+$$
 D\Psi
-\]
+$$
 
 相同，所以 eigenvalues、complex roots 和 spiral dynamics 也相同。
 
 因此：
 
-\[
+$$
 \boxed{
 \text{spiral dynamics}\not\Rightarrow\text{independent exit mechanism}.
 }
-\]
+$$
 
 图可以是真的，动态可以是真的，但我对动态附加的机制解释仍然可以是假的。
 
@@ -460,11 +460,11 @@ D\Psi
 
 恰恰相反，它们记录的是：
 
-\[
+$$
 \boxed{
 \text{exit mechanism 一点点消失，而真正的问题一点点显现。}
 }
-\]
+$$
 
 ---
 
@@ -474,7 +474,7 @@ D\Psi
 
 第一条来自 v5–v6：
 
-\[
+$$
 \text{局部 cancellation}
 \rightarrow
 \text{有限 cancellation}
@@ -482,11 +482,11 @@ D\Psi
 \text{非加法封闭域}
 \rightarrow
 \text{一般加法域与路径结构}.
-\]
+$$
 
 第二条来自 v7–v9 以及后来的有限补偿研究：
 
-\[
+$$
 \text{binary choice}
 \rightarrow
 \text{exact compensation}
@@ -496,7 +496,7 @@ D\Psi
 \text{support}
 \rightarrow
 \text{closure / falsification / identification}.
-\]
+$$
 
 第一条最终越来越像一个独立的 additive-domain / path-structure 数学问题。
 
@@ -520,32 +520,32 @@ D\Psi
 
 例如三个有限关系：
 
-\[
+$$
 A\sim2B,
 \qquad
 B\sim2C,
 \qquad
 A\sim C.
-\]
+$$
 
 最初看起来几乎只是一个小学算术谜题。
 
 但如果不能偷用线性“汇率”，真正的问题就变成：
 
-\[
+$$
 \text{仅凭单调性、可加性和曲率，}
 \text{这些有限比较能否共同成立？}
-\]
+$$
 
 这才逐渐导向后来关于 minimal rejection support、finite curvature、closure 与 bounded identification 的问题。
 
 因此，最初那句“你根本跑不出去”，后来变成了一个更严格的研究问题：
 
-\[
+$$
 \boxed{
 \text{模型究竟在第几个有限观测上第一次无处可逃？}
 }
-\]
+$$
 
 这可能是整个项目中最意外的一次转化。
 
@@ -586,37 +586,37 @@ v1.0 原始 README 曾经非常明确地声称 Exit Mechanism 是本研究的核
 
 最初的问题是：
 
-\[
+$$
 \text{退出机制存在吗？}
-\]
+$$
 
 后来变成：
 
-\[
+$$
 \text{这个分解凭什么？}
-\]
+$$
 
 再后来变成：
 
-\[
+$$
 \text{什么行为能够支持这种表示？}
-\]
+$$
 
 然后是：
 
-\[
+$$
 \text{什么有限观察真正识别了什么？}
-\]
+$$
 
 最终，我更关心的是：
 
-\[
+$$
 \boxed{
 \text{给定尽可能少的行为信息，}
 \text{一个模型究竟能够逃避多少，}
 \text{又在什么时候第一次被迫作出可拒绝的承诺？}
 }
-\]
+$$
 
 所以 exit mechanism 不是这个研究计划最终的答案。
 
