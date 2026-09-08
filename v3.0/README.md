@@ -1,8 +1,8 @@
 # A Structural Model of Rational Addiction — v3.0
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20632874-blue)](https://doi.org/10.5281/zenodo.20632874)
-**Author:** Yushang Cheng
-**ORCID:** [0009-0001-3218-6423](https://orcid.org/0009-0001-3218-6423)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20632874-blue)](https://doi.org/10.5281/zenodo.20632874)  
+**Author:** Yushang Cheng  
+**ORCID:** [0009-0001-3218-6423](https://orcid.org/0009-0001-3218-6423)  
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
@@ -24,7 +24,9 @@ This is **v3.0** of *A Structural Model of Rational Addiction*. It represents a 
 
 The exit utility is generalized from the linear benchmark $g(c_t, A_t) = \eta(A_t - c_t)$ to an integral-form function family:
 
-$$g(c_t, A_t) = \int_{c_t}^{A_t} q(s)\,ds, \quad q(s) > 0,\; q'(s) < 0$$
+$$
+g(c_t, A_t) = \int_{c_t}^{A_t} q(s)\,ds, \quad q(s) > 0,\; q'(s) < 0
+$$
 
 governed by six axioms (C1)–(C6): convexity, monotonicity, boundary condition, linear degeneracy, separability, and curvature persistence. This ensures the model's qualitative conclusions hold for any convex, monotonic exit utility specification.
 
@@ -34,7 +36,9 @@ governed by six axioms (C1)–(C6): convexity, monotonicity, boundary condition,
 
 The interaction between adjustment friction $\gamma$ and the exit mechanism generates complex characteristic roots in the linearized Euler equation when $\Delta < 0$ (Regime II). The consumption path follows:
 
-$$\tilde{c}_t = R\,\rho^{\,t}\cos(t\theta + \phi), \quad \rho = \beta_d^{-1/2} > 1$$
+$$
+\tilde{c}_t = R\,\rho^{\,t}\cos(t\theta + \phi), \quad \rho = \beta_d^{-1/2} > 1
+$$
 
 This spiral divergent path satisfies both the Euler equation and the transversality condition, establishing compatibility with fully rational optimization.
 
@@ -53,9 +57,12 @@ The appendices provide closed-form solutions for:
 
 A formal welfare loss framework quantifies the cumulative utility gap between the actual spiral path and the hypothetical steady-state path:
 
-$$\mathcal{W} = \sum_{t=0}^{T^*} \beta_d^t\bigl[U(\bar{c}, \bar{A}) - U(c_t, A_t)\bigr]$$
+$$
+\mathcal{W} = \sum_{t=0}^{T^*} \beta_d^t\bigl[U(\bar{c}, \bar{A}) - U(c_t, A_t)\bigr]
+$$
 
 Three qualitative conclusions emerge directly from the spiral structure:
+
 - Welfare loss grows **superlinearly** with initial deviation $R$
 - Loss **increases** as the discount factor $\beta_d$ decreases
 - The benefit of early intervention **decreases strictly** with delay, confirming the superiority of early intervention
@@ -108,5 +115,5 @@ v3.0/
 
 ## License
 
-This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
 Copyright (c) 2026 Yushang Cheng.
