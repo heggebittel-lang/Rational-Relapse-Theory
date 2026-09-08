@@ -15,7 +15,7 @@ The current endpoint of the project is **v9.0 — _Compensated Current Choice an
 
 This archive is intentionally versioned rather than rewritten retroactively. A reader can therefore follow how the project moved from an addiction-specific conjecture to a general identification problem.
 
-For a compact bilingual navigation table, see **[ARCHIVE_INDEX.md](./ARCHIVE_INDEX.md)**. For the full version-by-version diagnosis — what each version added, how it was later criticized, and what the next version repaired — see **[WHY_THE_PROJECT_CHANGED.md](./WHY_THE_PROJECT_CHANGED.md)**.
+For a compact bilingual navigation table, see **[ARCHIVE_INDEX.md](./ARCHIVE_INDEX.md)**. For the full version-by-version diagnosis — what each version added, how it was later criticized, and what the next version repaired — see **[WHY_THE_PROJECT_CHANGED.md](./WHY_THE_PROJECT_CHANGED.md)**. For the personal and technical retrospective on **why the exit mechanism was originally proposed, why it ultimately fails as an independently identified mechanism, and how the failed idea led to binary compensated comparison**, see **[ORIGIN_AND_FAILURE_OF_THE_EXIT_MECHANISM.md](./ORIGIN_AND_FAILURE_OF_THE_EXIT_MECHANISM.md)**.
 
 ## What each version added — and why it changed
 
@@ -65,7 +65,7 @@ The project began from a simple question: can a rational-addiction model contain
 
 Successive versions then asked increasingly demanding questions about functional form, additive representation, double counting, path/history compression, compensated measurement, and identification. Literature auditing eventually showed that much of the mathematical machinery belongs to established revealed-preference, additive-measurement, graph, finite-difference, and dynamic-systems theory. The final stage therefore narrows the claim: the potentially substantive object is the **information structure and comparison support** required for counterfactual identification, not the standard tools used to analyze it.
 
-See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [WHY_THE_PROJECT_CHANGED.md](./WHY_THE_PROJECT_CHANGED.md) for the detailed research diagnosis, and [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the completed archival release record.
+See [RESEARCH_HISTORY.md](./RESEARCH_HISTORY.md) for a compact research history, [WHY_THE_PROJECT_CHANGED.md](./WHY_THE_PROJECT_CHANGED.md) for the detailed research diagnosis, [ORIGIN_AND_FAILURE_OF_THE_EXIT_MECHANISM.md](./ORIGIN_AND_FAILURE_OF_THE_EXIT_MECHANISM.md) for the origin-and-failure retrospective, and [RELEASE_READINESS.md](./RELEASE_READINESS.md) for the completed archival release record.
 
 ## Preservation policy
 
