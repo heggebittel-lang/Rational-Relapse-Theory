@@ -4,6 +4,8 @@ This file records the development of the project for provenance. It is not a cla
 
 For a retrospective explanation of **why each stage led to the next version, how the two JME desk rejections changed the project, and why the research program stops at v9.0**, see [`WHY_THE_PROJECT_CHANGED.md`](./WHY_THE_PROJECT_CHANGED.md).
 
+For the personal and technical retrospective on **how the exit mechanism originated, why it ultimately fails as an independently identified mechanism, and how the failed idea led to binary compensated comparison**, see [`ORIGIN_AND_FAILURE_OF_THE_EXIT_MECHANISM.md`](./ORIGIN_AND_FAILURE_OF_THE_EXIT_MECHANISM.md).
+
 ## v1.0 — Initial exit-mechanism sketch
 
 The project began as a short rational-addiction model motivated by a simple question: whether there could be an endogenous value associated with reducing or exiting an addictive activity, rather than treating cessation only as an externally imposed commitment device. The initial paper added an exit-related utility term and a quadratic adjustment friction to a Becker–Murphy-style stock dynamic. Oscillatory paths were interpreted as rational relapse.
